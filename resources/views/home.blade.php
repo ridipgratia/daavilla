@@ -29,8 +29,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <style>
-       
+       .service-item:hover{
+        background: #0d6efd;
+       }
     </style>
 </head>
 
@@ -171,18 +175,50 @@
                         <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
                         <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotel Daavilla</span></h1>
                         <p class="mb-4">Daavilla is in one of the trendiest sections of Guwahati, placing close to railway station, Airport, business district and popular attractions. The elegant Hotel “Daavilla’’ in Guwahati offers stellar amenities and a peaceful private location a short drive from heart of the city Dispur.</p>
-                        <div class="">
-                            <p>From <span class="text-primary fw-bold fst-italic">Lokpriya Gopinath Bordoloi International Airport <i class="fas fa-plane"></i></span> <br>
+
+                        <details>
+                            <summary>Distance from</summary>
+                            <p><span class="text-primary fw-bold fst-italic">Lokpriya Gopinath Bordoloi International Airport <i class="fas fa-plane"></i></span> <br>
                                 By car :
-                                Take the fastest route via NH-17 and arrive at the hotel in <span class="text-white p-1 fw-bold bg-warning rounded-1">45 minutes</span> <br></p>
-
-                            <p>
-                                From <span class="text-primary fw-bold fst-italic">Guwahati Railway Station <i class="fas fa-train"></i></span> <br>
-                            By car :
-                            Take the fastest route via GS Road arrive at the hotel in about <span class="text-white p-1 fw-bold bg-warning rounded-1">20 minutes</span>
-
+                                Take the fastest route via NH-17 and arrive at the hotel in <span class="text-white p-1 fw-bold bg-warning rounded-1">45 minutes</span> <br>
                             </p>
-                        </div>
+                            <p>
+                                <span class="text-primary fw-bold fst-italic">Guwahati Railway Station <i class="fas fa-train"></i></span> <br>
+                                By car :
+                                Take the fastest route via GS Road arrive at the hotel in about <span class="text-white p-1 fw-bold bg-warning rounded-1">20 minutes</span>
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>Things to do in Guwahati</summary>
+                            <p>
+                                <h3 class="text-secondary">Kamakhya Temple</h3>
+                                20 mi / 13 km from the hotel <br>
+                                Kamakhya Temple in Guwahati is considered one of the oldest and most sacred centres of Tantric practices, dedicated to the goddess Kamakhya. Visit to learn about the history of the temple and to admire the surrounding Nilachal hills.
+                            </p>
+                            <p>
+                                <h3 class="text-secondary">Assam state Zoo</h3>
+                                10 mi / 7 km from the hotel <br>
+                                Discover Deepor Beel Bird Sanctuary, a permanent freshwater lake located southwest of Guwahati city. It is renowned for its rich diversity of fauna and aquatic vegetation, which attracts wild elephants.
+                            </p>
+                            <p>
+                                <h3 class="text-secondary">Guwahati University</h3>
+                                30 mi / 19 km from the hotel <br>
+                                One of northeast India’s oldest and most well-respected universities, Gauhati University (GU) was established in 1948 and is affiliated with more than 320 colleges and institutes throughout Lower Assam.
+                            </p>
+                            <p>
+                                <h3 class="text-secondary">Deepor Beel</h3>
+                                25 mi / 17 km from the hotel <br>
+                                Discover Deepor Beel Bird Sanctuary, a permanent freshwater lake located southwest of Guwahati city. It is renowned for its rich diversity of fauna and aquatic vegetation, which attracts wild elephants.
+                            </p>
+                            <p>
+                                <h3 class="text-secondary"> Sankardev khalaketra </h3>
+                                10 mi / 5 km from the hotel <br>
+                            </p>
+                            
+                            
+                        </details>
+
                         {{-- <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
@@ -248,7 +284,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-1.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-white text-primary fw-bold rounded-2 border border-primary py-1 px-3 ms-4">Rs3000/Night</small>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs3000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -269,7 +305,7 @@
                                 <p class="text-body mb-3">Our Standard Room offers a spacious retreat with a king bed, A/C, shower, mini bar, and more. Enjoy complimentary toiletries, WIFI, and entertainment amenities.</p>
                                 <div class="d-flex justify-content-between">
                                     <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>
-                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <a class="btn btn-sm btn-outline-danger rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +314,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Rs4000/Night</small>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -299,7 +335,7 @@
                                 <p class="text-body mb-3">Indulge in luxury in our Deluxe Rooms, featuring a garden/pool view, king bed, sofa, and more. Enjoy amenities like a mini bar, bathrobe, and entertainment options.</p>
                                 <div class="d-flex justify-content-between">
                                     <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>
-                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <a class="btn btn-sm btn-outline-danger rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +345,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-3.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Rs4500/Night</small>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4500/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -330,7 +366,7 @@
                                 <p class="text-body mb-3">Experience luxury in our Junior Suite Rooms, featuring a pool view, king bed, sofa, and more. Enjoy amenities like a mini bar, bathrobe, and entertainment options.</p>
                                 <div class="d-flex justify-content-between">
                                     <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>                                    
-                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <a class="btn btn-sm btn-outline-danger rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +375,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Rs5000/Night</small>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs5000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -360,7 +396,7 @@
                                 <p class="text-body mb-3">Our Suite Room 303 offers luxurious comfort with a garden view, king bed, jacuzzi bath, and more. Enjoy amenities like a mini bar, bathrobe, and entertainment options.</p>
                                 <div class="d-flex justify-content-between">
                                     <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>                                    
-                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <a class="btn btn-sm btn-outline-danger rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -484,20 +520,27 @@
                             <p class="text-body mb-0">boasts a state-of-the-art gym and yoga facility, perfect for health-conscious travelers.</p>
                         </a>
                     </div>
-                    <a class="d-flex justify-content-end text-primary text-decoration-none" href="/service"  data-wow-delay="1s">
-                        Explore More 
-                        <div  style="margin:2px">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.6s">
+                        <a class="service-item rounded text-decoration-none" href="">
+                            {{-- <div class="service-icon bg-transparent border rounded p-1"> --}}
+                                {{-- <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center"> --}}
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                {{-- </div> --}}
+                            {{-- </div> --}}
+                            <h5 class="mb-3">Explore More</h5>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <!-- Service End -->
+
         </div>
-        <!-- Service End -->
-        
         <!-- Footer Start -->
-        <x-footer-component></x-footer-component>
-        <!-- Footer End -->
+        <div class="container">
+            <x-footer-component></x-footer-component>
+        </div>
+    <!-- Footer End -->
+        
     </div>
 
      <!-- JavaScript Libraries -->
