@@ -49,34 +49,8 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-        <div class="container-fluid bg-dark px-0">
-            <div class="row gx-0">
-                <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase font-weight-bold">DAAVILLA</h1>
-                    </a>
-                </div>
-                <div class="col-lg-9">
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="index.html" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase font-weight-bold">DAAVILLA</h1>
-                        </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto py-0">
-                                <a href="/" class="nav-item nav-link active">Home</a>
-                                <a href="/about" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="room.html" class="nav-item nav-link">Rooms</a>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        
+            <x-nav-component></x-nav-component>
         <!-- Header End -->
         
         <!-- Carousel Start -->
@@ -284,7 +258,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-1.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs3000/Night</small>
+                                <small class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs3000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -294,7 +268,7 @@
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
-                                        {{-- <small class="fa fa-star text-primary"></small> --}}
+                                        <small class="fa fa-star text-primary"></small>
                                     </div>
                                 </div>
                                 <div class="d-flex mb-3">
@@ -314,7 +288,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4000/Night</small>
+                                <small class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -345,7 +319,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-3.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4500/Night</small>
+                                <small class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4500/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -375,7 +349,7 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs5000/Night</small>
+                                <small class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs5000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
