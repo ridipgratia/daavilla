@@ -23,13 +23,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('lib/animate/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -116,8 +115,7 @@
                                 <div class="col-md-3">
                                     <div class="date" id="date2" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check out" data-target="#date2"
-                                            data-toggle="datetimepicker" />
+                                            placeholder="Check out" data-target="#date2" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -257,7 +255,7 @@
 
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer">
+        {{-- <div class="container-fluid bg-dark text-light footer">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4">
@@ -322,7 +320,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+
+
+
+
         <!-- Footer End -->
 
 
@@ -332,15 +334,11 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    {{-- <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('lib/counterup/counterup.min.js') }}"></script>
-    <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('lib/tempusdominus/js/moment.min.js') }}"></script>
-    <script src="{{ asset('lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
-    <script src="{{ asset('lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+
 
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
