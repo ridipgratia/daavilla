@@ -21,12 +21,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -72,8 +71,7 @@
             </div>
         </div>
         <!-- Header End -->
-
-
+        
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -93,8 +91,8 @@
                         <img class="w-100" src="img/people.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                {{-- <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1> --}}
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Living Luxury</h6>
+                                <h2 class=" text-white mb-4 animated slideInDown">Trendy Guwahati hotel near station, airport, with stellar amenities, peaceful location.</h2>
                                 {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> --}}
                             </div>
@@ -447,16 +445,10 @@
 
      <!-- JavaScript Libraries -->
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="lib/wow/wow.min.js"></script>
-     <script src="lib/easing/easing.min.js"></script>
-     <script src="lib/waypoints/waypoints.min.js"></script>
-     <script src="lib/counterup/counterup.min.js"></script>
-     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-     <script src="lib/tempusdominus/js/moment.min.js"></script>
-     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
- 
+     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> --}}
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+ </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
