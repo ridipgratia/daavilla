@@ -29,6 +29,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+       
+    </style>
 </head>
 
 <body>
@@ -46,13 +49,13 @@
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">DAAVILLA</h1>
+                        <h1 class="m-0 text-primary text-uppercase font-weight-bold">DAAVILLA</h1>
                     </a>
                 </div>
                 <div class="col-lg-9">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="index.html" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">DAAVILLA</h1>
+                            <h1 class="m-0 text-primary text-uppercase font-weight-bold">DAAVILLA</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
@@ -81,7 +84,7 @@
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Living Luxury</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Hotel <span class="text-primary">Daavilla</span></h1>
+                                <h1 class="text-white mb-4 animated slideInDown">Hotel <span class="text-light text-uppercase fst-italic fw-bold">Daavilla</span></h1>
                                 <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> -->
                             </div>
@@ -115,7 +118,7 @@
 
 
         <!-- Booking Start -->
-        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid booking pb-5" data-wow-delay="0.1s">
             <div class="container">
                 <div class="bg-white shadow" style="padding: 35px;">
                     <div class="row g-2">
@@ -151,7 +154,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-primary w-100">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -168,6 +171,18 @@
                         <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
                         <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotel Daavilla</span></h1>
                         <p class="mb-4">Daavilla is in one of the trendiest sections of Guwahati, placing close to railway station, Airport, business district and popular attractions. The elegant Hotel “Daavilla’’ in Guwahati offers stellar amenities and a peaceful private location a short drive from heart of the city Dispur.</p>
+                        <div class="">
+                            <p>From <span class="text-primary fw-bold fst-italic">Lokpriya Gopinath Bordoloi International Airport <i class="fas fa-plane"></i></span> <br>
+                                By car :
+                                Take the fastest route via NH-17 and arrive at the hotel in <span class="text-white p-1 fw-bold bg-warning rounded-1">45 minutes</span> <br></p>
+
+                            <p>
+                                From <span class="text-primary fw-bold fst-italic">Guwahati Railway Station <i class="fas fa-train"></i></span> <br>
+                            By car :
+                            Take the fastest route via GS Road arrive at the hotel in about <span class="text-white p-1 fw-bold bg-warning rounded-1">20 minutes</span>
+
+                            </p>
+                        </div>
                         {{-- <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
@@ -202,16 +217,16 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/drinks.jpg" style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 zoomIn" data-wow-delay="0.5s" src="img/child.jpg"  style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/man.jpg">
+                                <img class="img-fluid rounded w-100 zoomIn" data-wow-delay="0.3s" src="img/man.jpg">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/child.jpg">
+                                <img class="img-fluid rounded w-50 zoomIn" data-wow-delay="0.1s" src="img/drinks.jpg">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/biryani.jpg">
+                                <img class="img-fluid rounded w-75 zoomIn" data-wow-delay="0.7s" src="img/biryani.jpg">
                             </div>
                         </div>
                     </div>
@@ -224,16 +239,16 @@
         <!-- Room Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="text-center" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-1.jpg" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Rs3000/Night</small>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-white text-primary fw-bold rounded-2 border border-primary py-1 px-3 ms-4">Rs3000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
@@ -243,7 +258,7 @@
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
-                                        <small class="fa fa-star text-primary"></small>
+                                        {{-- <small class="fa fa-star text-primary"></small> --}}
                                     </div>
                                 </div>
                                 <div class="d-flex mb-3">
@@ -251,15 +266,15 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>Bathroom</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Our Standard Room offers a spacious retreat with a king bed, A/C, shower, mini bar, and more. Enjoy complimentary toiletries, WIFI, and entertainment amenities.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>
+                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="">
@@ -281,16 +296,16 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>Bathroom</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Indulge in luxury in our Deluxe Rooms, featuring a garden/pool view, king bed, sofa, and more. Enjoy amenities like a mini bar, bathrobe, and entertainment options.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>
+                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- ============= -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6" data-wow-delay="0.6s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-3.jpg" alt="">
@@ -312,15 +327,15 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>Bathroom</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Experience luxury in our Junior Suite Rooms, featuring a pool view, king bed, sofa, and more. Enjoy amenities like a mini bar, bathrobe, and entertainment options.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>                                    
+                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/room-2.jpg" alt="">
@@ -342,10 +357,10 @@
                                     <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>Bathroom</small>
                                     <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small> 
                                 </div>
-                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <p class="text-body mb-3">Our Suite Room 303 offers luxurious comfort with a garden view, king bed, jacuzzi bath, and more. Enjoy amenities like a mini bar, bathrobe, and entertainment options.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary rounded py-2 px-4" data-bs-toggle="modal"  data-bs-target="#staticBackdrop">View Detail</button>                                    
+                                    <a class="btn btn-sm btn-outline-dark rounded py-2 px-4" href="">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -353,93 +368,135 @@
                 </div>
             </div>
         </div>
+        {{-- model starts--}}
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Deluxe Room</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    2. 	201,202,203,204 (Estimated Price Rs. 4000) 3 Adult <br> 
+                                        Room Size: <br>
+                                        Garden /pool view <br>
+                                        A/C <br>
+                                        King Bed <br>
+                                        Couch sofa with coffee table  <br>
+
+                                        Shower  <br>
+                                        Mini bar <br>
+                                        Dry kitchenette TCM Counter  <br>
+                                        Bathroom <br>
+                                        Bathrobe <br>
+                                        Toiletries <br>
+                                        Bath linen <br>
+                                        Entertainment <br>
+                                        WIFI <br>
+                                        Television 
+                                </div>
+
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    {{-- model ends --}}
         <!-- Room End -->
         
         <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="text-center" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
                     <h4>Host a memorable event for up to 200 guests in our flexible campus with 20 capacity fully equipped board room.</h4>
                     <p class="mt-2">Planning a major corporate event or private standard wedding or engagement of your dreams? We can help with outstanding services and spaces, including a private swimming  and an immense lawn for outdoor party and galas. We offer meeting room, including a flexible event space, complete with optional customized decor, on-site catering, and audiovisual equipment.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item rounded" href="">
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.1s">
+                        <a class="service-item rounded text-decoration-none" href="#">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-hotel fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="mb-0 text-dark">Experience comfort and luxury in our well-appointed rooms and apartments, designed for your utmost relaxation.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="service-item rounded" href="">
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.2s">
+                        <a class="service-item rounded text-decoration-none" href="#">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-utensils fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Savor exquisite cuisine at our restaurant, where every dish is a culinary delight.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="service-item rounded" href="">
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.3s">
+                        <a class="service-item rounded text-decoration-none" href="#">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-spa fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">Indulge in relaxation at our spa and maintain your fitness at our well-equipped facility.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <a class="service-item rounded" href="">
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.4s">
+                        <a class="service-item rounded text-decoration-none" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-swimmer fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Sports & Gaming</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">
+                                Experience a range of sports and gaming options at our hotel, catering to all enthusiasts.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item rounded" href="">
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.5s">
+                        <a class="service-item rounded text-decoration-none" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-glass-cheers fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">Event & Party</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="text-body mb-0">offers a versatile event space, ideal for hosting a variety of gatherings and parties.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <a class="service-item rounded" href="">
+                    <div class="col-lg-3 col-md-4" data-wow-delay="0.6s">
+                        <a class="service-item rounded text-decoration-none" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-dumbbell fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3">GYM & Yoga</h5>
-                            <p class="text-body mb-0">Fully equiped GYM facilities with YOGA </p>
+                            <p class="text-body mb-0">boasts a state-of-the-art gym and yoga facility, perfect for health-conscious travelers.</p>
                         </a>
                     </div>
-                    <a class="d-flex justify-content-end text-primary wow fadeInUp" href="service.html"  data-wow-delay="1s">Explore More</a>
-                    <!-- <img src="img/rightarrow.png" alt=""> -->
+                    <a class="d-flex justify-content-end text-primary text-decoration-none" href="/service"  data-wow-delay="1s">
+                        Explore More 
+                        <div  style="margin:2px">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
         <!-- Service End -->
         
         <!-- Footer Start -->
-        
+        <x-footer-component></x-footer-component>
         <!-- Footer End -->
     </div>
 
