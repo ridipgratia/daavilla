@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// ----------------------- ridip routes ---------------------
+require __DIR__ . '/ridip.php';
+// ----------------------- dipankor routes ---------------------
+
+require __DIR__ . '/dipankor.php';
