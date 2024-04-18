@@ -33,6 +33,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
 </head>
 
@@ -48,39 +49,7 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-        <div class="container-fluid bg-dark px-0">
-            <div class="row gx-0">
-                <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html"
-                        class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">DAAVILLA</h1>
-                    </a>
-                </div>
-                <div class="col-lg-9">
-
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="index.html" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">DAAVILLA</h1>
-                        </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
-                                <a href="about.html" class="nav-item nav-link active">About</a>
-                                <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="room.html" class="nav-item nav-link">Rooms</a>
-
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            </div>
-
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <x-nav-component></x-nav-component>
         <!-- Header End -->
 
 
@@ -117,8 +86,7 @@
                                 <div class="col-md-3">
                                     <div class="date" id="date2" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check out" data-target="#date2"
-                                            data-toggle="datetimepicker" />
+                                            placeholder="Check out" data-target="#date2" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -244,6 +212,9 @@
 
         <!-- Back to Top -->
         {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> --}}
+
+        {{-- ------------------- newsletter component -------------------------------- --}}
+        <x-newsletter-component></x-newsletter-component>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -251,7 +222,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-
+    <script src="{{ asset('js/newsletter.js') }}"></script>
 
 
     <!-- Template Javascript -->
