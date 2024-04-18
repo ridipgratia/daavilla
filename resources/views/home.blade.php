@@ -17,8 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> --}}
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     
@@ -30,6 +35,8 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <style>
        .service-item:hover{
@@ -62,10 +69,8 @@
                         <img class="w-100" src="img/living-room.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Living Luxury</h6>
                                 <h1 class="text-white mb-4 animated slideInDown">Hotel <span class="text-light text-uppercase fst-italic fw-bold">Daavilla</span></h1>
-                                <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> -->
+                                <h3 class="text-white mb-4 animated slideInDown"><span class="text-light fst-italic fw-bold">The exquisite hotel in Guwahati offers luxurious amenities and serene surroundings.</span></h3>
                             </div>
                         </div>
                     </div>
@@ -73,10 +78,7 @@
                         <img class="w-100" src="img/people.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Living Luxury</h6>
-                                <h2 class=" text-white mb-4 animated slideInDown">Trendy Guwahati hotel near station, airport, with stellar amenities, peaceful location.</h2>
-                                {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> --}}
+                                <h2 class=" text-white mb-4 animated slideInDown">Trendy hotel near station, airport, with stellar amenities, peaceful location.</h2>
                             </div>
                         </div>
                     </div>
@@ -129,7 +131,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">BOOK NOW</button>
+                            <button class="btn btn-danger w-100">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -145,7 +147,7 @@
                 <div class="row g-5 align-items-center">
                     
                     <div class="col-lg-6">
-                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
+                        <h6 class="text-start text-primary text-uppercase">About Us</h6>
                         <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotel Daavilla</span></h1>
                         <p class="mb-4">Daavilla is in one of the trendiest sections of Guwahati, placing close to railway station, Airport, business district and popular attractions. The elegant Hotel “Daavilla’’ in Guwahati offers stellar amenities and a peaceful private location a short drive from heart of the city Dispur.</p>
                         <details>
@@ -177,16 +179,16 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 zoomIn" data-wow-delay="0.5s" src="img/child.jpg"  style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 zoomIn" src="img/child.jpg"  style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 zoomIn" data-wow-delay="0.3s" src="img/man.jpg">
+                                <img class="img-fluid rounded w-100 zoomIn" src="img/man.jpg">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 zoomIn" data-wow-delay="0.1s" src="img/drinks.jpg">
+                                <img class="img-fluid rounded w-50 zoomIn" src="img/drinks.jpg">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 zoomIn" data-wow-delay="0.7s" src="img/biryani.jpg">
+                                <img class="img-fluid rounded w-75 zoomIn" src="img/biryani.jpg">
                             </div>
                         </div>
                     </div>
@@ -196,21 +198,21 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 zoomIn" data-wow-delay="0.5s" src="img/Kamakhya_Temple_Guwahati.JPG"  style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 zoomIn" src="img/Kamakhya_Temple_Guwahati.JPG"  style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 zoomIn" data-wow-delay="0.3s" src="img/Gatway_of_Kalakhetra,_Guwahati,_Assam.jpg">
+                                <img class="img-fluid rounded w-100 zoomIn" src="img/Gatway_of_Kalakhetra,_Guwahati,_Assam.jpg">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 zoomIn" data-wow-delay="0.1s" src="img/Chital_or_Spotted_Deer.jpg">
+                                <img class="img-fluid rounded w-50 zoomIn" src="img/Chital_or_Spotted_Deer.jpg">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 zoomIn" data-wow-delay="0.7s" src="img/deepor.jpg">
+                                <img class="img-fluid rounded w-75 zoomIn" src="img/deepor.jpg">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h6 class="section-title text-start text-primary text-uppercase">Things to do in Guwahati</h6>
+                        <h6 class=" text-start text-primary text-uppercase">Things to do in Guwahati</h6>
                         <p>Guwahati, the bustling capital city of Assam, India, offers a vibrant tapestry of cultural, historical, and natural attractions. Start your exploration with the Kamakhya Temple, a renowned Hindu pilgrimage site perched atop the Nilachal Hill. Delve into the region's rich history at the Assam State Museum, showcasing an impressive collection of artifacts and artworks. For a taste of local life, stroll through the bustling markets like Fancy Bazaar and Paltan Bazaar. Wildlife enthusiasts can visit the Assam State Zoo and Botanical Garden to see a variety of animal species, including the famous one-horned rhinoceros. Guwahati's culinary scene is also a highlight, with its array of authentic Assamese dishes and diverse culinary offerings.</p>
                         <details>
                             <summary class="text-primary">More...</summary>
@@ -266,7 +268,6 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
                     <h4>Host a memorable event for up to 200 guests in our flexible campus with 20 capacity fully equipped board room.</h4>
                     <p class="mt-2">Planning a major corporate event or private standard wedding or engagement of your dreams? We can help with outstanding services and spaces, including a private swimming  and an immense lawn for outdoor party and galas. We offer meeting room, including a flexible event space, complete with optional customized decor, on-site catering, and audiovisual equipment.</p>
@@ -359,7 +360,8 @@
             <x-footer-component></x-footer-component>
         </div>
     <!-- Footer End -->
-        
+    <x-newsletter-component></x-newsletter-component>
+
     </div>
 
      <!-- JavaScript Libraries -->
@@ -368,6 +370,8 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
  </script>
+     <script src="{{ asset('js/newsletter.js') }}"></script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
