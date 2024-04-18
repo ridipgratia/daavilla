@@ -1,0 +1,117 @@
+.main-newsletter-div {
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    /* border: 1px solid red; */
+}
+
+.newsletter-btn {
+    border: none;
+    background: #ffc107;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.newsletter-form-div {
+    background: #E9FBFF;
+    padding: 20px 0px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    border-radius: 5px;
+    display: none !important;
+}
+
+.newsletter-form-div button {
+    margin: 10px 0px;
+    background: #ffc107;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px 0px;
+}
+
+.newsletter-head {
+    justify-content: space-between;
+}
+
+.newsletter-head span {
+    text-align: left;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.newsletter-head span:first-child {
+    cursor: pointer;
+}
+
+.type-newsletter {
+    padding: 10px 0px;
+}
+
+.type-newsletter p {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+
+.type-newsletter-1 {
+    /* border: 1px solid red; */
+    margin: 5px 0px;
+}
+
+.type-newsletter-1 p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.type-newsletter-1 input {
+    width: 20px;
+    cursor: pointer;
+}
+
+.email-newsletter {
+    border: 1px solid grey;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.email-newsletter span {
+    background: #D3D3D3;
+    padding: 2px 0px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.email-newsletter input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: transparent;
+    padding: 0px 3px;
+}
+
+.newsletter-show {
+    display: flex !important;
+}
+
+.newsletter-hide {
+    display: none !important;
+}
