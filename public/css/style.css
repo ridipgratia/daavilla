@@ -91,9 +91,10 @@
     color: var(--primary);
 }
 
-.active{
+.active {
     color: #FEA116;
 }
+
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link {
         margin-right: 0;
@@ -135,16 +136,6 @@
         height: 100%;
         object-fit: cover;
     }
-}
-
-.page-header {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.page-header-inner {
-    background: rgba(15, 23, 43, .7);
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
