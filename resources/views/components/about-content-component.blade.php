@@ -8,10 +8,7 @@
                 <p class="mb-4">Daavilla is in one of the trendiest sections of Guwahati, placing close to railway station, Airport, business district and popular attractions. The elegant Hotel “Daavilla’’ in Guwahati offers stellar amenities and a peaceful private location a short drive from heart of the city Dispur.</p>
                 <details>
                     <summary class="text-primary">More...</summary>
-                    <p class="mb-4">Daavilla is in one of the trendiest sections of Guwahati, placing close to
-                        railway station, Airport, business district and popular attractions. The elegant Hotel
-                        “Daavilla’’ in Guwahati offers stellar amenities and a peaceful private location a short
-                        drive from heart of the city Dispur. While staying at the hotel, you can cool off in our
+                    <p class="mb-4">While staying at the hotel, you can cool off in our
                         outdoor swimming pool after tiring day. You don’t need to step out if you are hungry sample
                         multicuisine at our elegant restaurant that also provides room service. For a causal meeting
                         over drinks or a quick bite with friends, head to the lounge Bar, open daily from noon until
