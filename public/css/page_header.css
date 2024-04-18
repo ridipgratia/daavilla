@@ -1,0 +1,21 @@
+.main-page-header-div {
+    background-image: url('../img/about.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header-div {
+    background: rgba(15, 23, 43, .7);
+}
+
+.page-header-para {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white !important;
+}
+
+#page-header-span {
+    color: #FFC107;
+    font-weight: bold;
+}
