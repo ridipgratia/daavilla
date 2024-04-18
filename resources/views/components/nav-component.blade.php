@@ -27,7 +27,7 @@
                         <a href="/" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                         <a href="/about" class="nav-item nav-link {{ Request::is('aboout') ? 'active' : '' }}">About</a>
                         <a href="/service" class="nav-item nav-link {{ Request::is('service') ? 'active' : '' }}">Services</a>
-                        <a href="/room" class="nav-item nav-link {{ Request::is('room') ? 'active' : '' }}">Rooms</a>
+                        <a href="/rooms" class="nav-item nav-link {{ Request::is('rooms') ? 'active' : '' }}">Rooms</a>
                         <a href="/contact" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
                     </div>
                 </div>
