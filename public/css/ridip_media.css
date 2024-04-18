@@ -1,6 +1,16 @@
+@media(max-width:1000px) {
+    .newsletter-form-div {
+        width: 60%;
+    }
+}
+
 @media (max-width: 500px) {
     .content-footer-div-1 {
         width: 80%;
         margin-top: 10px;
+    }
+
+    .newsletter-form-div {
+        width: 100%;
     }
 }
