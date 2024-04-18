@@ -1,4 +1,9 @@
 <!-- Header Start -->
+<style>
+    .active{
+        color: #FEA116;
+    }
+</style>
 <div class="container-fluid bg-dark px-0">
     <div class="row gx-0">
         <div class="col-lg-3 bg-dark d-none d-lg-block">
