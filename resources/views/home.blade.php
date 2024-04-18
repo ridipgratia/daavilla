@@ -193,7 +193,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4" data-wow-delay="0.4s">
-                        <a class="service-item rounded text-decoration-none" href="">
+                        <a class="service-item rounded text-decoration-none" href="#">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-swimmer fa-2x text-primary"></i>
@@ -205,7 +205,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4" data-wow-delay="0.5s">
-                        <a class="service-item rounded text-decoration-none" href="">
+                        <a class="service-item rounded text-decoration-none" href="#">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-glass-cheers fa-2x text-primary"></i>
@@ -216,7 +216,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         </a>
                     </div>
                     <div class="col-lg-3 col-md-4" data-wow-delay="0.6s">
-                        <a class="service-item rounded text-decoration-none" href="">
+                        <a class="service-item rounded text-decoration-none" href="#">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-dumbbell fa-2x text-primary"></i>
@@ -228,11 +228,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="col-lg-3 col-md-4" data-wow-delay="0.6s">
                         <a class="service-item rounded text-decoration-none" href="/service">
-                            {{-- <div class="service-icon bg-transparent border rounded p-1"> --}}
-                                {{-- <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center"> --}}
                                     <i class="fas fa-long-arrow-alt-right"></i>
-                                {{-- </div> --}}
-                            {{-- </div> --}}
                             <h5 class="mb-3">Explore More</h5>
                         </a>
                     </div>

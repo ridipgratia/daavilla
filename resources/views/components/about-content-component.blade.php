@@ -22,7 +22,7 @@
                         private lawn. You can maintain your workout routine with a visit to our health club and
                         treat yourself to revitalizing treatments in our beautiful spa & parlour. With on-site
                         restaurants and a bar, you can enjoy a delicious meal or refreshing cocktail after on-site
-                        meetings or sightseeing</p>
+                        meetings or sightseeing.</p>
 
                     <p class="mb-4">When you’re ready to explore, visit ancient Hindu pilgrimage sites like <span
                             class="text-primary">Kamakhya Temple</span> or spot rare birds at Deepor Beel Wildlife
@@ -107,15 +107,6 @@
                         By car :
                         Take the fastest route via GS Road arrive at the hotel in about <span class="text-white p-1 fw-bold bg-warning rounded-1">20 minutes</span>
                     </p>
-                    {{-- <p><span class="text-primary fw-bold fst-italic">Lokpriya Gopinath Bordoloi International Airport <i class="fas fa-plane"></i></span> <br>
-                        By car :
-                        Take the fastest route via NH-17 and arrive at the hotel in <span class="text-white p-1 fw-bold bg-warning rounded-1">45 minutes</span> <br>
-                    </p>
-                    <p>
-                        <span class="text-primary fw-bold fst-italic">Guwahati Railway Station <i class="fas fa-train"></i></span> <br>
-                        By car :
-                        Take the fastest route via GS Road arrive at the hotel in about <span class="text-white p-1 fw-bold bg-warning rounded-1">20 minutes</span>
-                    </p> --}}
                 </details>
             </div>
             
