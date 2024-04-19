@@ -36,12 +36,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/service.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <style>
-       .service-item:hover{
-        background: #0d6efd;
-       }
+        .carousel-item{
+            height: 80vh !important;
+        }
     </style>
 </head>
 
@@ -95,59 +96,59 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </button>
             </div>
              <!-- Booking Start -->
-        <div class="container-fluid booking pb-5">
-            <div class="container">
-                <div class="bg-white shadow" style="padding: 35px;">
-                    <div class="row g-2">
-                        <div class="col-md-10">
-                            <div class="row g-2">
-                                <div class="col-md-3">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+            <div class="container-fluid booking pb-5">
+                <div class="container">
+                    <div class="bg-white shadow" style="padding: 35px;">
+                        <div class="row g-2">
+                            <div class="col-md-10">
+                                <div class="row g-2">
+                                    <div class="col-md-3">
+                                        <div class="date" id="date1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input"
+                                                placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    <div class="col-md-3">
+                                        <div class="date" id="date2" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Adult</option>
-                                        <option value="1">Adult 1</option>
-                                        <option value="2">Adult 2</option>
-                                        <option value="3">Adult 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Child</option>
-                                        <option value="1">Child 1</option>
-                                        <option value="2">Child 2</option>
-                                        <option value="3">Child 3</option>
-                                    </select>
+                                    <div class="col-md-3">
+                                        <select class="form-select">
+                                            <option selected>Adult</option>
+                                            <option value="1">Adult 1</option>
+                                            <option value="2">Adult 2</option>
+                                            <option value="3">Adult 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-select">
+                                            <option selected>Child</option>
+                                            <option value="1">Child 1</option>
+                                            <option value="2">Child 2</option>
+                                            <option value="3">Child 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger w-100">BOOK NOW</button>
+                            <div class="col-md-2">
+                                <button class="btn btn-danger w-100">BOOK NOW</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Booking End -->
+            <!-- Booking End -->
         </div>
         <!-- Carousel End -->
 
         <!-- About Start -->
-       <x-about-content-component></x-about-content-component>
+            <x-about-content-component></x-about-content-component>
         <!-- About End -->
 
 
         <!-- Room Start -->
-        <x-room-component></x-room-component>
+            <x-room-component></x-room-component>
         <!-- Room End -->
         
         <!-- Service Start -->
@@ -158,79 +159,72 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     <h4>Host a memorable event for up to 200 guests in our flexible campus with 20 capacity fully equipped board room.</h4>
                     <p class="mt-2">Planning a major corporate event or private standard wedding or engagement of your dreams? We can help with outstanding services and spaces, including a private swimming  and an immense lawn for outdoor party and galas. We offer meeting room, including a flexible event space, complete with optional customized decor, on-site catering, and audiovisual equipment.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.1s">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="mb-0 text-dark">Experience comfort and luxury in our well-appointed rooms and apartments, designed for your utmost relaxation.</p>
-                        </a>
+                <div class="container d-flex flex-wrap gap-2 justify-content-center col-12">
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-hotel"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Rooms & Appartment</h3>
+                            <p class="col-12 text-center service-card-text">Experience comfort and luxury in our well-appointed rooms and apartments, designed for your utmost relaxation.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.2s">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Savor exquisite cuisine at our restaurant, where every dish is a culinary delight.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-utensils"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Food & Restaurant</h3>
+                            <p class="col-12 text-center service-card-text">Savor exquisite cuisine at our restaurant, where every dish is a culinary delight.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.3s">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Indulge in relaxation at our spa and maintain your fitness at our well-equipped facility.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-spa"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Spa & Fitness</h3>
+                            <p class="col-12 text-center service-card-text">Indulge in relaxation at our spa and maintain your fitness at our well-equipped facility.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.4s">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Sports & Gaming</h5>
-                            <p class="text-body mb-0">
-                                Experience a range of sports and gaming options at our hotel, catering to all enthusiasts.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-swimmer"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Sports & Gaming</h3>
+                            <p class="col-12 text-center service-card-text">Experience a range of sports and gaming options at our hotel, catering to all enthusiasts.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.5s">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Event & Party</h5>
-                            <p class="text-body mb-0">offers a versatile event space, ideal for hosting a variety of gatherings and parties.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-glass-cheers"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Event & Party</h3>
+                            <p class="col-12 text-center service-card-text">offers a versatile event space, ideal for hosting a variety of gatherings and parties.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.6s">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">GYM & Yoga</h5>
-                            <p class="text-body mb-0">boasts a state-of-the-art gym and yoga facility, perfect for health-conscious travelers.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-dumbbell"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">GYM & Yoga</h3>
+                            <p class="col-12 text-center service-card-text">boasts a state-of-the-art gym and yoga facility, perfect for health-conscious travelers.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4" data-wow-delay="0.6s">
-                        <a class="service-item rounded text-decoration-none" href="/service">
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                            <h5 class="mb-3">Explore More</h5>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <a href="/service" class="text-decoration-none ">
+                                <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                                <a href="/service" class="text-decoration-none ">
+                                    <h3 class="col-12 text-center text-primary service-card-text">Explore More</h3>
+                                </a>
+                        </div>
                     </div>
                 </div>
             </div>

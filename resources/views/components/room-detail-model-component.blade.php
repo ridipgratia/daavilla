@@ -38,31 +38,28 @@
 
                         <br> 
                         <h3>Room Features</h3>
-                        <p>Room Size: ,
-                            <li>Garden /pool view</li> 
-                            <li>A/C</li> 
-                            <li>King Bed</li> 
-                            <li>Couch sofa with coffee table</li> 
-                            <li>Shower</li> 
-                            <li>Mini bar</li> 
-                            <li>Dry kitchenette TCM Counter</li> 
-                            <li>Bathroom</li> 
-                            <li>Garden /pool view</li> 
-                            <li>Garden /pool view</li> 
-                            <li>Garden /pool view</li> 
+                        <p>Room Size: 
+                            <div class="row">
+                                <div class="col">
+                                    <li>Garden /pool view</li> 
+                                    <li>Entertainment</li> 
+                                    <li>WIFI</li> 
+                                    <li>A/C</li> 
+                                    <li>King Bed</li> 
+                                    <li>Couch sofa with coffee table</li> 
+                                    <li>Television</li> 
+                                </div>
+                                <div class="col">
+                                    <li>Mini bar</li> 
+                                    <li>Dry kitchenette TCM Counter</li> 
+                                    <li>Shower</li> 
+                                    <li>Bathroom</li> 
+                                    <li>Bathrobe</li> 
+                                    <li>Bath linen</li> 
+                                </div>
+                            </div>
                             
-                             
-                             
-                            
-                            
-                            
-                            Bathrobe
-                            Toiletries
-                            Bath linen
-                            Entertainment
-                            WIFI
-                            Television</p> 
-                            {{-- <a href="" class="bg-danger text-white rounded py-1 px-3 text-decoration-none">BOOK NOW</a> --}}
+                            </p> 
                 </div>
             </div>
         </div>
