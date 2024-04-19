@@ -23,7 +23,7 @@
 
                     <p class="mb-4">When you’re ready to explore, visit ancient Hindu pilgrimage sites like <span
                             class="text-primary">Kamakhya Temple</span> or spot rare birds at Deepor Beel Wildlife
-                        Sanctuary, Assam State Zoo, . Business travellers appreciate our proximity to local
+                        Sanctuary, Assam State Zoo and many more. Business travellers appreciate our proximity to local
                         industrial parks, universities, and technology companies, while families enjoy visiting the
                         clouded leopards and macaques at Assam State Zoo less than 10 minutes away.</p>
                 </details>
