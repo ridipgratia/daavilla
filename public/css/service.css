@@ -1,0 +1,56 @@
+.main-service-card {
+    background: white;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    margin: 5px 0px;
+    border-radius: 0px 0px 8px 8px;
+    align-content: flex-start;
+    cursor: pointer;
+}
+
+.main-service-card:hover .service-card span {
+    transform: translateY(20px);
+}
+
+.service-card {
+    background: #4071F4;
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .08); */
+    justify-content: center;
+}
+
+.service-card:first-child {
+    border-radius: 8px 8px 0px 40px;
+    /* height: 130px; */
+    align-items: center;
+    padding: 30px 0px;
+
+}
+
+
+.service-card:last-child {
+    background: white;
+    /* height: 200px; */
+    padding: 10px 0px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 30px 0px;
+}
+
+.service-card span {
+    width: 60px;
+    height: 58px;
+    font-size: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px double white;
+    padding: 0px !important;
+    margin: 0px !important;
+    color: #FEA116;
+    transition: 0.8s;
+
+}
+
+.service-card-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}

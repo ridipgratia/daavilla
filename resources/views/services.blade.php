@@ -33,6 +33,10 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/page_header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/service.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <style>
         .service-item:hover {
             background: #0d6efd;
@@ -51,26 +55,14 @@
         </div>
         <!-- Spinner End -->
 
-      <!-- Header Start -->
-        
-      <x-nav-component></x-nav-component>
-      <!-- Header End -->
+        <!-- Header Start -->
+
+        <x-nav-component></x-nav-component>
+        <!-- Header End -->
 
 
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/service.jpg);">
-            <div class="container-fluid page-header-inner py-5">
-                <div class="container text-center pb-5">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <x-page-header-component></x-page-header-component>
         <!-- Page Header End -->
 
 
@@ -84,15 +76,13 @@
                                 <div class="col-md-3">
                                     <div class="date" id="date1" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1"
-                                            data-toggle="datetimepicker" />
+                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="date" id="date2" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check out" data-target="#date2"
-                                            data-toggle="datetimepicker" />
+                                            placeholder="Check out" data-target="#date2" data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -127,7 +117,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
+                    <h6 class=" text-center text-primary text-uppercase">Our Services</h6>
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
                     <h4>Host a memorable event for up to 200 guests in our flexible campus with 20 capacity fully
                         equipped
@@ -137,301 +127,247 @@
                         outdoor party and galas. We offer meeting room, including a flexible event space, complete with
                         optional customized decor, on-site catering, and audiovisual equipment.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">BAR</h5>
-                            <p class="text-body mb-0">Chic ambiance, craft cocktails, live music, luxury
+                <div class="container d-flex flex-wrap gap-2 justify-content-center col-12">
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-glass-cheers"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">BAR</h3>
+                            <p class="col-12 text-center service-card-text">Chic ambiance, craft cocktails, live music,
+                                luxury
                                 accommodations,
                                 exquisite dining..</p>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Concierge service</h5>
-                            <p class="text-body mb-0">Personalized assistance, local expertise, reservations,
-                                recommendations, hospitality, convenience, reliability, trust.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-utensils"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Concierge service</h3>
+                            <p class="col-12 text-center service-card-text">Personalized assistance, local expertise,
+                                reservations, hospitality, convenience, reliability, trust</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-soap fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Dry cleaning</h5>
-                            <p class="text-body mb-0">Professional garment care, convenience, stain removal, freshness,
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-soap"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Dry cleaning</h3>
+                            <p class="col-12 text-center service-card-text">Professional garment care, convenience,
+                                stain removal,
+                                freshness,
                                 quality, reliability, efficiency</p>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-check fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Express check-out</h5>
-                            <p class="text-body mb-0">Efficient departure, quick process, no waiting, convenience,
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Express check-out</h3>
+                            <p class="col-12 text-center service-card-text">Efficient departure, quick process, no
+                                waiting, convenience,
                                 seamless experience..</p>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Hair salon</h5>
-                            <p class="text-body mb-0">Cutting-edge styles, skilled stylists, rejuvenating treatments,
-                                personalized care, trendy atmosphere.</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-glass-cheers"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Hair salon</h3>
+                            <p class="col-12 text-center service-card-text">Cutting-edge styles, skilled stylists,
+                                rejuvenating
+                                treatments,
+                                personalized care, trendy atmosphere..</p>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-handshake fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Meeting facilities</h5>
-                            <p class="text-body mb-0">State-of-the-art spaces, versatile setups, tech-equipped,
-                                conducive environment, professional service..</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-handshake"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Meeting facilities</h3>
+                            <p class="col-12 text-center service-card-text">State-of-the-art spaces, versatile setups,
+                                tech-equipped,
+                                conducive environment, professional service.</p>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">On-site dining</h5>
-                            <p class="text-body mb-0">Delicious cuisine, diverse menu, cozy ambiance, impeccable
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-utensils"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">On-site dining</h3>
+                            <p class="col-12 text-center service-card-text">Delicious cuisine, diverse menu, cozy
+                                ambiance, impeccable
                                 service, convenient location.</p>
-                        </a>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-wifi fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Free Wi-Fi</h5>
-                            <p class="text-body mb-0">Access free Wi-Fi, surf the web, connect, and enjoy internet
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-wifi"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Free Wi-Fi</h3>
+                            <p class="col-12 text-center service-card-text">Access free Wi-Fi, surf the web, connect,
+                                and enjoy internet
                                 access without charges or fees, available for all users.</p>
-                        </a>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-ban-smoking fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Non-smoking</h5>
-                            <p class="text-body mb-0">Designated non-smoking area: Ensuring clean air and comfort for
-                                all.</p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-smoking fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Smoking</h5>
-                            <p class="text-body mb-0">Designated smoking area: Enjoy smoking in designated areas only.
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-mug-saucer fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Breakfast</h5>
-                            <p class="text-body mb-0">Enjoy breakfast service: Delicious morning meals to start your
-                                day.
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-square-parking fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Valet parking</h5>
-                            <p class="text-body mb-0">Convenient valet parking: Hassle-free, professional service for
-                                your vehicle.
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-bell-concierge  fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Room service</h5>
-                            <p class="text-body mb-0">Room service available: Enjoy convenient, personalized service
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-ban-smoking"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Non-smoking</h3>
+                            <p class="col-12 text-center service-card-text">Designated non-smoking area: Ensuring clean
+                                air and comfort
                                 for
-                                your comfort.
-                            </p>
-                        </a>
+                                all.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-smoking"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Smoking</h3>
+                            <p class="col-12 text-center service-card-text">Designated smoking area: Enjoy smoking in
+                                designated areas
+                                only.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-mug-saucer"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Breakfast</h3>
+                            <p class="col-12 text-center service-card-text">Enjoy breakfast service: Delicious morning
+                                meals to start
+                                your
+                                day.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-square-parking"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Valet parking</h3>
+                            <p class="col-12 text-center service-card-text">Convenient valet parking: Hassle-free,
+                                professional service
+                                for
+                                your vehicle.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-bell-concierge"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Room service</h3>
+                            <p class="col-12 text-center service-card-text">Room service available: Enjoy convenient,
+                                personalized
+                                service
+                                for
+                                your comfort.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-bell-concierge"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Breakfast buffet</h3>
+                            <p class="col-12 text-center service-card-text">Indulge in breakfast buffet: Varied options
+                                for a delightful
+                                morning.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-swimmer"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Outdoor pool</h3>
+                            <p class="col-12 text-center service-card-text">Refreshing oasis, sparkling waters,
+                                sun-soaked relaxation,
+                                family-friendly atmosphere, poolside paradise.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-spa"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Spa</h3>
+                            <p class="col-12 text-center service-card-text">Tranquil sanctuary, rejuvenating
+                                treatments, skilled
+                                therapists,
+                                relaxation, luxury amenities, holistic wellness.</p>
+                        </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-bell-concierge  fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Breakfast buffet</h5>
-                            <p class="text-body mb-0">Indulge in breakfast buffet: Varied options for a delightful
-                                morning.
-                            </p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-car"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Car rental</h3>
+                            <p class="col-12 text-center service-card-text">Convenient mobility, wide selection,
+                                flexible terms, reliable
+                                service, hassle-free experience.</p>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Outdoor pool</h5>
-                            <p class="text-body mb-0">Refreshing oasis, sparkling waters, sun-soaked relaxation,
-                                family-friendly atmosphere, poolside paradise..</p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Spa</h5>
-                            <p class="text-body mb-0">Tranquil sanctuary, rejuvenating treatments, skilled therapists,
-                                relaxation, luxury amenities, holistic wellness..</p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-car fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Car rental</h5>
-                            <p class="text-body mb-0">Convenient mobility, wide selection, flexible terms, reliable
-                                service, hassle-free experience..</p>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-lock fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Safety deposit box</h5>
-                            <p class="text-body mb-0">Secure storage, peace of mind, valuables protection,
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-lock"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Safety deposit box</h3>
+                            <p class="col-12 text-center service-card-text">Secure storage, peace of mind, valuables
+                                protection,
                                 confidentiality assured.</p>
-                        </a>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-shirt fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Laundry service</h5>
-                            <p class="text-body mb-0">Efficient laundering, meticulous care, fresh fabrics, prompt
-                                delivery, convenience..</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-shirt"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Laundry service</h3>
+                            <p class="col-12 text-center service-card-text">Efficient laundering, meticulous care,
+                                fresh fabrics, prompt
+                                delivery, convenience.</p>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Minibar or fridge</h5>
-                            <p class="text-body mb-0">Refreshment at hand, stocked with treats, convenient indulgence,
-                                customizable options..</p>
-                        </a>
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa fa-glass-cheers"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Minibar or fridge</h3>
+                            <p class="col-12 text-center service-card-text">Refreshment at hand, stocked with treats,
+                                convenient
+                                indulgence,
+                                customizable options.</p>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="service-item rounded text-decoration-none" href="#">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div
-                                    class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-credit-card fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Cashless Payment</h5>
-                            <p class="text-body mb-0">Secure cashless Payment,Devid Card,Credit Card,UPI
+                    <div class="d-flex flex-wrap col-md-3 col-11 main-service-card">
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <span><i class="fa-solid fa-credit-card"></i></span>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 service-card">
+                            <h3 class="col-12 text-center text-primary service-card-text">Cashless Payment</h3>
+                            <p class="col-12 text-center service-card-text">Secure cashless Payment,Devid Card,Credit
+                                Card,UPI
                                 confidentiality assured.</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -443,9 +379,8 @@
         <x-footer-component></x-footer-component>
         <!-- Footer End -->
 
-
+        <x-newsletter-component></x-newsletter-component>
         <!-- Back to Top -->
-        {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> --}}
     </div>
 
     <!-- JavaScript Libraries -->
@@ -453,7 +388,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="{{ asset('js/newsletter.js') }}"></script>
+    <script src="{{ asset('js/page_header.js') }}"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
