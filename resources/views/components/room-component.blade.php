@@ -129,37 +129,6 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Deluxe Room</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="text-center">
-                    <img src="img/room-3.jpg" alt="" height="500" width="800"> <br>
-                     	<span class="text-danger fw-bold"> 201,202,203,204 (Estimated Price Rs. 4000) 3 Adult </span> <br> 
-                        Room Size: ,
-                        Garden /pool view ,
-                        A/C ,
-                        King Bed ,
-                        Couch sofa with coffee table  ,
-                        Shower  ,
-                        Mini bar ,
-                        Dry kitchenette TCM Counter  ,
-                        Bathroom ,
-                        Bathrobe ,
-                        Toiletries ,
-                        Bath linen ,
-                        Entertainment ,
-                        WIFI ,
-                        Television 
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
+   <x-room-detail-model-component></x-room-detail-model-component>
     {{-- model ends --}}
 </div>
