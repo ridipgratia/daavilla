@@ -2,7 +2,36 @@
     .newsletter-form-div {
         width: 60%;
     }
+
+    .main-navbar-div {
+        flex-direction: column;
+        flex-flow: column;
+    }
+
+    .navbar-head-div {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .navbar-link-div {
+        display: none !important;
+        flex-direction: column;
+        flex-flow: column;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .nav-link {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 5px 0px;
+    }
 }
+
 
 @media(max-width:950px) {
     .main-service-card {
