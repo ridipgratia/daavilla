@@ -1,14 +1,13 @@
-<!-- Header Start -->
+{{-- <!-- Header Start -->
 <style>
-    .active{
+    .active {
         color: #FEA116;
     }
 </style>
 <div class="container-fluid bg-primary px-0">
     <div class="row gx-0">
         <div class="col-lg-3 bg-primary d-none d-lg-block">
-            <a href="/"
-                class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+            <a href="/" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                 <h1 class="m-0 text-white text-uppercase">DAAVILLA</h1>
             </a>
         </div>
@@ -26,13 +25,30 @@
                     <div class="navbar-nav mr-auto py-0">
                         <a href="/" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                         <a href="/about" class="nav-item nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
-                        <a href="/service" class="nav-item nav-link {{ Request::is('service') ? 'active' : '' }}">Services</a>
+                        <a href="/service"
+                            class="nav-item nav-link {{ Request::is('service') ? 'active' : '' }}">Services</a>
                         <a href="/rooms" class="nav-item nav-link {{ Request::is('rooms') ? 'active' : '' }}">Rooms</a>
-                        <a href="/contact" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
+                        <a href="/contact"
+                            class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </div>
-<!-- Header End -->
+<!-- Header End --> --}}
+
+
+<div class="container-fluid bg-primary px-0 d-flex flex-wrap main-navbar-div">
+    <div class="d-flex flex-wrap navbar-head-div">
+        <a href="/">DAAVILLA</a>
+        <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="d-flex flex-wrap navbar-link-div">
+        <a href="" class="nav-link">Home <span class="nav-span"></span></a>
+        <a href="" class="nav-link">About <span class="nav-span"></span></a>
+        <a href="" class="nav-link">Services <span class="nav-span"></span></a>
+        <a href="" class="nav-link">Rooms <span class="nav-span"></span></a>
+        <a href="" class="nav-link">Contact <span class="nav-span"></span></a>
+    </div>
+</div>
