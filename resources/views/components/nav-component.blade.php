@@ -38,17 +38,20 @@
 </div>
 <!-- Header End --> --}}
 
-
 <div class="container-fluid bg-primary px-0 d-flex flex-wrap main-navbar-div">
     <div class="d-flex flex-wrap navbar-head-div">
         <a href="/">DAAVILLA</a>
         <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
     <div class="d-flex flex-wrap navbar-link-div">
-        <a href="" class="nav-link">Home <span class="nav-span"></span></a>
-        <a href="" class="nav-link">About <span class="nav-span"></span></a>
-        <a href="" class="nav-link">Services <span class="nav-span"></span></a>
-        <a href="" class="nav-link">Rooms <span class="nav-span"></span></a>
-        <a href="" class="nav-link">Contact <span class="nav-span"></span></a>
+        <a href="/" class="nav-link {{ Request::is('') ? 'active' : '' }}">Home <span class="nav-span"></span></a>
+        <a href="/about" class="nav-link {{ Request::is('about') ? 'active' : '' }}">About <span
+                class="nav-span"></span></a>
+        <a href="/service" class="nav-link {{ Request::is('service') ? 'active' : '' }}">Services <span
+                class="nav-span"></span></a>
+        <a href="/rooms" class="nav-link {{ Request::is('rooms') ? 'active' : '' }}">Rooms <span
+                class="nav-span"></span></a>
+        <a href="/contact" class="nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact <span
+                class="nav-span"></span></a>
     </div>
 </div>

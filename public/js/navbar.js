@@ -6,5 +6,5 @@ $(document).ready(function () {
         } else {
             $('.navbar-link-div').attr('style', 'display:flex !important')
         }
-    })
-})
+    });
+});
