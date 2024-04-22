@@ -36,6 +36,7 @@
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <link href="css/style.css" rel="stylesheet">
@@ -71,7 +72,6 @@
             </div>
         </div>
         <!-- Page Header End -->
-
 
         <!-- Booking Start -->
         <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -140,6 +140,7 @@
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
  </script>
     <script src="{{ asset('js/newsletter.js') }}"></script>
+    <script src="{{ asset('js/navbar.js') }}"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

@@ -34,9 +34,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
     <link rel="stylesheet" href="{{ asset('css/service.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/page_header.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <style>
@@ -246,7 +249,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
  </script>
      <script src="{{ asset('js/newsletter.js') }}"></script>
-
+     <script src="{{ asset('js/navbar.js') }}"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
