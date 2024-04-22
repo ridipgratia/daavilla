@@ -32,6 +32,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/page_header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsletter.css') }}">
@@ -97,7 +98,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-danger w-100">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -133,8 +134,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     <script src="{{ asset('js/newsletter.js') }}"></script>
-    <script src="{{ asset('js/page_header.js') }}"></script>
-
+    <script src="{{ asset('js/navbar.js') }}"></script>
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
