@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class room-component extends Component
+class AboutContentComponent extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class room-component extends Component
      */
     public function render()
     {
-        return view('components.room-component');
+        return view('components.about-content-component');
     }
 }

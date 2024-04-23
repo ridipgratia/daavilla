@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class room-detail-model-component extends Component
+class homePageCarousal extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class room-detail-model-component extends Component
      */
     public function render()
     {
-        return view('components.room-detail-model-component');
+        return view('components.home-page-carousal');
     }
 }
