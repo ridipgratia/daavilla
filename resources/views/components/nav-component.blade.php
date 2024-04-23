@@ -44,14 +44,15 @@
         <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
     <div class="d-flex flex-wrap navbar-link-div">
-        <a href="/" class="nav-link {{ Request::is('') ? 'active' : '' }}">Home <span class="nav-span"></span></a>
-        <a href="/about" class="nav-link {{ Request::is('about') ? 'active' : '' }}">About <span
+        <a href="/" class="nav-link {{ Request::is('/') ? 'active_link' : '' }}">Home <span
                 class="nav-span"></span></a>
-        <a href="/service" class="nav-link {{ Request::is('service') ? 'active' : '' }}">Services <span
+        <a href="/about" class="nav-link {{ Request::is('about') ? 'active_link' : '' }}">About <span
                 class="nav-span"></span></a>
-        <a href="/rooms" class="nav-link {{ Request::is('rooms') ? 'active' : '' }}">Rooms <span
+        <a href="/service" class="nav-link {{ Request::is('service') ? 'active_link' : '' }}">Services <span
                 class="nav-span"></span></a>
-        <a href="/contact" class="nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact <span
+        <a href="/rooms" class="nav-link {{ Request::is('rooms') ? 'active_link' : '' }}">Rooms <span
+                class="nav-span"></span></a>
+        <a href="/contact" class="nav-link {{ Request::is('contact') ? 'active_link' : '' }}">Contact <span
                 class="nav-span"></span></a>
     </div>
 </div>

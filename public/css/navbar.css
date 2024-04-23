@@ -65,6 +65,6 @@
     display: flex !important;
 }
 
-.active {
+.active_link {
     border: 2px solid #FEA116;
 }
