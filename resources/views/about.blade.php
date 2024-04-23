@@ -56,7 +56,12 @@
 
 
         <!-- Page Header Start -->
-        <x-page-header-component></x-page-header-component>
+        @php
+            $page_head = 'About Page';
+        @endphp
+        <x-page-header-component :headerContent=$page_head>
+
+        </x-page-header-component>
         <!-- Page Header End -->
 
 
@@ -135,6 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     <script src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
+    <script src="{{ asset('js/page_header.js') }}"></script>
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
 </body>

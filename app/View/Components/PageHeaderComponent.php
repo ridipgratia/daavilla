@@ -11,9 +11,10 @@ class PageHeaderComponent extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $headerContent;
+    public function __construct($headerContent)
     {
-        //
+        $this->headerContent = $headerContent;
     }
 
     /**

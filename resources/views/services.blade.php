@@ -63,7 +63,12 @@
 
 
         <!-- Page Header Start -->
-        <x-page-header-component></x-page-header-component>
+        @php
+            $page_head = 'Service Page';
+        @endphp
+        <x-page-header-component :headerContent=$page_head>
+
+        </x-page-header-component>
         <!-- Page Header End -->
 
 

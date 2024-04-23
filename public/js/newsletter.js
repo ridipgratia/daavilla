@@ -1,3 +1,5 @@
+import AllMethod from "./AllMethod.js";
+const all_method = new AllMethod();
 $(document).ready(function () {
     $('.newsletter-btn').on('click', function () {
         $('.newsletter-form-div').addClass('newsletter-show');
