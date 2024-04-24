@@ -15,10 +15,8 @@ class CreateNewsletterTable extends Migration
     {
         Schema::create('newsletter', function (Blueprint $table) {
             $table->id();
-            $table->string('email');
-            $table->integer('all_notification')->nullable();
-            $table->integer('room_notification')->nullable();
-            $table->integer('price_notification')->nullable();
+            $table->string('email')->unique();
+            $table->integer('newsletter_type');
             $table->timestamps();
         });
     }

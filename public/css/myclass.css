@@ -1,0 +1,16 @@
+.error {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: red;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.error_class {
+    color: red;
+}
+
+.success_class {
+    color: blue;
+}

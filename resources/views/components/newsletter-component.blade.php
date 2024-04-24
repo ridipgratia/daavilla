@@ -7,7 +7,7 @@
         </div>
         <div class="d-flex flex-wrap col-11 type-newsletter">
             <p class="col-12">Type of send notification</p>
-            <div class="d-flex flex-wrap col-12 gap-2 type-newsletter-1">
+            {{-- <div class="d-flex flex-wrap col-12 gap-2 type-newsletter-1">
                 <input type="checkbox" id="all_news">
                 <span>All type of notification</span>
             </div>
@@ -18,13 +18,22 @@
             <div class="d-flex flex-wrap col-12 gap-2 type-newsletter-1">
                 <input type="checkbox" id="price_news">
                 <span>Send price related notification</span>
+            </div> --}}
+            <div class="d-flex flex-wrap col-12 type-newsletter-1">
+                <select class="col-12" name="" id="news_letter_type">
+                    <option value="" selected disabled>Select Type</option>
+                    <option value="1">All Notification</option>
+                    <option value="2">Price Notification</option>
+                    <option value="3">Room Notification</option>
+                </select>
             </div>
         </div>
         <div class="d-flex col-11 email-newsletter">
             <span class="col-1"><i class="fa-solid fa-envelope"></i></span>
             <input type="email" id="email_news" class="col-11">
         </div>
-        <button class="col-11">SUBMIT</button>
+        <p class="col-11 error" id="news_error"></p>
+        <button class="col-11" id="newsletter-btn">SUBMIT</button>
     </div>
 
 </div>

@@ -84,6 +84,16 @@
     cursor: pointer;
 }
 
+.type-newsletter-1 select {
+    font-size: 15px;
+    background: transparent;
+    padding: 5px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
 .email-newsletter {
     border: 1px solid grey;
     flex-wrap: nowrap;
