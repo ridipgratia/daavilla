@@ -138,7 +138,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    <script src="{{ asset('js/newsletter.js') }}"></script>
+    <script type="module" src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('js/page_header.js') }}"></script>
     <!-- Template Javascript -->

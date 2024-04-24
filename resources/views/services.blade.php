@@ -123,7 +123,6 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class=" text-center text-primary text-uppercase">Our Services</h6>
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
                     <h4>Host a memorable event for up to 200 guests in our flexible campus with 20 capacity fully
                         equipped
@@ -396,7 +395,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
-    <script src="{{ asset('js/newsletter.js') }}"></script>
+    <script type="module" src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/page_header.js') }}"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
