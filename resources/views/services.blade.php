@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.jpg" rel="icon" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,6 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -73,7 +72,7 @@
 
 
         <!-- Booking Start -->
-        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid booking pb-5">
             <div class="container">
                 <div class="bg-white shadow" style="padding: 35px;">
                     <div class="row g-2">
@@ -110,7 +109,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-danger w-100">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -122,7 +121,7 @@
         <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="text-center">
                     <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
                     <h4>Host a memorable event for up to 200 guests in our flexible campus with 20 capacity fully
                         equipped

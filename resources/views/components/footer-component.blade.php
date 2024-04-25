@@ -7,7 +7,7 @@
             <a class="d-flex " href=""><i class="fab fa-twitter"></i></a>
             <a class="d-flex" href=""><i class="fab fa-facebook-f"></i></a>
             <a class="d-flex" href=""><i class="fab fa-youtube"></i></a>
-            <a class="d-flex" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="d-flex" href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
     <div class="d-flex flex-wrap col-12 content-footer-div">
