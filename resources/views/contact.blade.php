@@ -169,6 +169,7 @@
         </div>
         <!-- Contact End -->
 
+
         <!-- Footer Start -->
         <div class="container">
             <x-footer-component></x-footer-component>
@@ -185,6 +186,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script type="module" src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>

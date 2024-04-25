@@ -44,7 +44,7 @@ class ContactController extends Controller
                     $email_details = MyModule::getEmailDetails('contact', $request->email);
                     $check = true;
                 } catch (Exception $err) {
-                    array_push($message, 'Server error please try later !');
+                    $message = 'Server error please try later ';
                     $status = 500;
                 }
                 if ($check) {
@@ -69,11 +69,11 @@ class ContactController extends Controller
                             MyModule::insertData('contact_message', $update_data);
                         }
                         DB::commit();
-                        array_push($message, 'Successfully send your query !');
+                        $message = 'Successfully send your query !';
                         $status = 200;
                     } catch (Exception $err) {
                         DB::rollBack();
-                        array_push($message, 'Server error please try later ');
+                        $message = 'Server error please try later ';
                         $status = 500;
                     }
                 }

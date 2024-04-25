@@ -57,18 +57,32 @@ class MyModule {
             contentType: false,
             processData: false,
             success: function (result) {
-                const error_name = [
-                    'name',
-                    'email',
-                    'subject',
-                    'message'
-                ];
                 $('.contact-error').html('');
-                for (var i = 0; i < $('.contact-error').length; i++) {
-                    result.message.forEach(mes => {
-                        if (mes.indexOf(error_name[i]) !== -1) {
-                            $('.contact-error').eq(i).html(mes);
-                        }
+                if (result.status == 400) {
+                    const error_name = [
+                        'name',
+                        'email',
+                        'subject',
+                        'message'
+                    ];
+                    for (var i = 0; i < $('.contact-error').length; i++) {
+                        result.message.forEach(mes => {
+                            if (mes.indexOf(error_name[i]) !== -1) {
+                                $('.contact-error').eq(i).html(mes);
+                            }
+                        });
+                    }
+                } else if (result.status == 500) {
+                    Swal.fire({
+                        title: "Information",
+                        text: result.message,
+                        icon: "error"
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Information",
+                        text: result.message,
+                        icon: "success"
                     });
                 }
             }, error: function (data) {
