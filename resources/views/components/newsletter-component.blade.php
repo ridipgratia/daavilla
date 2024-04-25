@@ -30,7 +30,7 @@
         </div>
         <div class="d-flex col-11 email-newsletter">
             <span class="col-1"><i class="fa-solid fa-envelope"></i></span>
-            <input type="email" id="email_news" class="col-11">
+            <input type="email" id="email_news" class="col-11" placeholder="example@gmail.com">
         </div>
         <p class="col-11 error" id="news_error"></p>
         <button class="col-11" id="newsletter-btn">SUBMIT</button>

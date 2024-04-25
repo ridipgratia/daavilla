@@ -34,6 +34,7 @@ class MyModule {
                         "color": "blue"
                     });
                     $('#news_error').html(result.message);
+                    $('#email_news').val('')
                 }
             }, error: function (data) {
                 console.log(data);
