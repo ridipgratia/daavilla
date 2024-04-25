@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Contact | Hotel Daavilla</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -129,38 +130,44 @@
                     </div>
                     <div class="col-md-9"> <!-- div 3 -->
                         <div class="contact-form">
-                            <form>
-                                <div class="row g-3">
+                            <form id="contact-form">
+                                @csrf
+                                <div class="row g-2">
                                     <div class="col-md-6">
-                                        <div class="">
+                                        <div class="contact-form-div">
                                             <label for="name">Your Name</label>
-                                            <input type="text" class="form-control" id="name"
+                                            <input type="text" class="form-control" id="name" name="name"
                                                 placeholder="Write your name here">
+                                            <p class="contact-error"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="">
+                                        <div class="contact-form-div">
                                             <label for="email">Your Email</label>
-                                            <input type="email" class="form-control" id="email"
+                                            <input type="email" class="form-control" id="email" name="email"
                                                 placeholder="Write your email address">
+                                            <p class="contact-error"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="">
+                                        <div class="contact-form-div">
                                             <label for="subject">Subject</label>
-                                            <input type="text" class="form-control" id="subject"
+                                            <input type="text" class="form-control" id="subject" name="subject"
                                                 placeholder="Write your subject">
+                                            <p class="contact-error"></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="">
+                                        <div class="contact-form-div">
                                             <label for="message">Message</label>
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"
+                                                name="message"></textarea>
+                                            <p class="contact-error"></p>
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex flex-row-reverse">
-                                        <button class="btn btn-primary py-2" type="submit">Send
-                                            Message</button>
+                                        <button class="btn btn-primary contact-submit-btn" type="submit">Send
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -191,6 +198,7 @@
     <script type="module" src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('js/page_header.js') }}"></script>
+    <script type="module" src="{{ asset('js/contact.js') }}"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

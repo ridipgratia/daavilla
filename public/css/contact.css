@@ -7,6 +7,7 @@ iframe {
     padding: 10px 30px;
     border-radius: 10px;
 }
+
 .contact-form form input {
     background-color: rgb(255, 252, 248);
     border: none;
@@ -16,6 +17,7 @@ iframe {
     background-color: rgb(255, 252, 248);
     border: none;
 }
+
 .contact-form form label {
     color: #0d6efd;
     font-size: large;
@@ -30,3 +32,32 @@ iframe {
         height: 30vh;
     }
 } */
+
+
+.contact-form-div {
+    /* border: 1px solid red; */
+    padding: 0px !important;
+    margin: 0px !important;
+    height: fit-content;
+}
+
+.contact-form-div label {
+    padding: 0px !important;
+    margin: 7px 0px !important;
+}
+
+.contact-form-div input {
+    margin-bottom: 7px;
+}
+
+.contact-form-div p {
+    margin: 5px 0px;
+    padding: 0px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.contact-submit-btn {
+    width: 130px;
+}

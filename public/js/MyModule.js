@@ -8,6 +8,7 @@ class MyModule {
     async submitNewsletter() {
         var news_type = $('#news_letter_type').val();
         var email = $('#email_news').val();
+        $('#newsletter-btn').html(`<span id="contact-loader"><i class="fa-solid fa-spinner"></i></span>`);
         await $.ajax({
             type: "post",
             url: "/newsletter-submit",
@@ -38,6 +39,43 @@ class MyModule {
                 console.log(data);
             }
         });
+        $('#newsletter-btn').html('Submit');
+    }
+
+    // ----------------------- contact form submit -----------------------
+    async contactFormSubmit() {
+        var form_data = new FormData($('#contact-form')[0]);
+        $('.contact-submit-btn').html(`<span id="contact-loader"><i class="fa-solid fa-spinner"></i></span>`);
+        await $.ajax({
+            type: "post",
+            url: "/contact-form",
+            headers: {
+                'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: form_data,
+            dataType: "json",
+            contentType: false,
+            processData: false,
+            success: function (result) {
+                const error_name = [
+                    'name',
+                    'email',
+                    'subject',
+                    'message'
+                ];
+                $('.contact-error').html('');
+                for (var i = 0; i < $('.contact-error').length; i++) {
+                    result.message.forEach(mes => {
+                        if (mes.indexOf(error_name[i]) !== -1) {
+                            $('.contact-error').eq(i).html(mes);
+                        }
+                    });
+                }
+            }, error: function (data) {
+                console.log(data);
+            }
+        });
+        $('.contact-submit-btn').html('Send');
     }
 }
 export default MyModule;
