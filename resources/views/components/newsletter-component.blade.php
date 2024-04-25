@@ -24,7 +24,7 @@
                     <option value="" selected disabled>Select Type</option>
                     <option value="1">All Notification</option>
                     <option value="2">Price Notification</option>
-                    {{-- <option value="3">Room Notification</option> --}}
+                    <option value="3">Room Notification</option>
                 </select>
             </div>
         </div>
