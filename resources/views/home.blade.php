@@ -7,9 +7,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.jpg" rel="icon" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +48,6 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
 
         <!-- Header Start -->
 
@@ -341,10 +334,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     <script type="module" src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
-    <script src="{{ asset('js/page_header.js') }}"></script>
+    {{-- <script src="{{ asset('js/page_header.js') }}"></script> --}}
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    {{-- <script src="js/main.js"></script> --}}
 </body>
 
 </html>
