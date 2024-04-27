@@ -1,0 +1,30 @@
+1. MAIN BOOKING FORM ->
+    1. check-in check-out (input box)
+    2. number of rooms and number person (adults and child )->
+        a. add mew rooms with same requirement
+    3. special discount (dropdownn)
+2. ROOM TYPE ->
+    1. SELECT ROOM TYPE 
+    2. SELECT SERVICES->
+        A. ROOM ONLY
+        B. BREAKFAST
+        C. BREAKFAST AND DINNNER
+        D. FULL BAORD 
+        NOTES. SERVICES ARE RADIO BUTTONS
+3. YOUR DETAILS ->
+    1. PERSIONAL DETAILS ->
+        1. FIRST NAME 
+        2. LAST NAME
+        3. EMAIL ID ->
+            SEND ANY INFORMATION TO THIS EMAIL ID IF ANY .
+        4. PRIVACY POLICY 
+        5. SELECT COUNTRY
+        6. PHONE NUMBER 
+4. REVIEW OF BOOKING DETAILS WITH TOTAL AMOUNT ->
+5. PAYMENT SECTION 
+6. CONFIRMATION ->
+    A. SEND A CONFIRMATION EMAIL TO PROVIDER EMAIL ->
+
+        A. SEND A PDF WITH FULL DETAILS 
+        B. SEND A MINI MAP 
+        C. WITH OUR SSERVICE CONTACT 
