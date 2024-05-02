@@ -63,7 +63,7 @@
                             src="{{ asset('img/Gatway_of_Kalakhetra,_Guwahati,_Assam.jpg') }}">
                     </div>
                     <div class="col-6 text-end">
-                        <img class="img-fluid rounded w-50 zoomIn" src="{{ asset('img/Chital_or_Spotted_Deer.jpg') }}">
+                        <img class="img-fluid rounded w-50 zoomIn" src="{{ asset('img/Chital_or_Spotted_Deer.JPG') }}">
                     </div>
                     <div class="col-6 text-start">
                         <img class="img-fluid rounded w-75 zoomIn" src="{{ asset('img/deepor.jpg') }}">
