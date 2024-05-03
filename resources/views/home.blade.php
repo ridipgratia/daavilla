@@ -61,6 +61,10 @@
         <x-home-page-carousal></x-home-page-carousal>
         <!-- Carousel End -->
 
+        {{-- ------------------booking component start------------------ --}}
+        {{-- <x-room-booking-form-component></x-room-booking-form-component> --}}
+        {{-- ------------------booking component end------------------ --}}
+
         <!-- About Start -->
         <x-about-content-component></x-about-content-component>
         <!-- About End -->
@@ -338,6 +342,7 @@
     <script src="{{ asset('js/loader.js') }}"></script>
     <script type="module" src="{{ asset('js/newsletter.js') }}"></script>
     <script src="{{ asset('js/navbar.js') }}"></script>
+    <script src="{{ asset('js/bookingForm.js') }}"></script>
 
     {{-- <script src="{{ asset('js/page_header.js') }}"></script> --}}
 </body>
