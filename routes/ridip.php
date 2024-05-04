@@ -5,6 +5,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BookRoomController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsLetterController;
 
@@ -20,3 +21,5 @@ Route::post('/contact-form', [ContactController::class, 'contactFormSubmit']);
 Route::get('/first-form-booking', [BookingController::class, 'firstFormBooking']);
 // -------------------- testing booking date -------------------
 Route::get('/first-booking-page-get', [BookingController::class, 'firstFormBookingGet']);
+// ------------------ book room -----------------
+Route::get('/book-room', [BookRoomController::class, 'index']);

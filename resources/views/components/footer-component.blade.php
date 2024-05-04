@@ -1,4 +1,7 @@
-<div class="container-fluid d-flex flex-wrap col-12  main-footer-div">
+{{-- -------------- old parent div -------------- --}}
+{{-- <div class="container-fluid d-flex flex-wrap col-12  main-footer-div">
+</div> --}}
+<div class="d-flex flex-wrap col-12  main-footer-div">
     <div class="d-flex flex-wrap col-12  social-footer-div">
         <div class="d-flex flex-wrap col-md-4 col-11 social-footer-div-1">
             <p>US ON SOCIAL MEDIA....</p>
