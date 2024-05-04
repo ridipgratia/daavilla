@@ -17,11 +17,16 @@
     <div class="container">
         <div class="p-3 d-flex flex-wrap justify-content-center align-items-center row bg-dark text-white">
             <div class="col-12">
-                <div class="d-flex gap-2 example justify-content-center align-items-center text-center" style="overflow:scroll;">
-                    <p>Ready to make unforgettable memories? Book now to reserve your comfortable hotel room and ensure
-                        a delightful stay!
-                    </p>
-                    <button class="btn btn-danger" id="booking">Book Now</button>
+                <div class="d-flex gap-2 example justify-content-center" style="overflow:scroll;">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Ready to make unforgettable memories? Book now to reserve your comfortable hotel room and
+                            ensure
+                            a delightful stay!
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="btn btn-danger" id="booking">Book Now</button>
+                    </div>
                 </div>
             </div>
             <div class="d-none" id="main-form">
@@ -30,20 +35,22 @@
                     <span id="hide-form" class=""><i class="fa-solid fa-angle-up"></i></span>
                 </div>
                 <div class="bg-white shadow" style="padding: 35px;">
+
+                    {{-- --------booking form start--------------- --}}
                     <form action="">
                         <div class="row g-2">
                             <div class="col-md-10">
                                 <div class="row g-2">
                                     <div class="col-md-3">
                                         <div class="date" id="date1" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input"
+                                            <input type="date" class="form-control datetimepicker-input"
                                                 placeholder="Check in" data-target="#date1"
                                                 data-toggle="datetimepicker" />
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="date" id="date2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input"
+                                            <input type="date" class="form-control datetimepicker-input"
                                                 placeholder="Check out" data-target="#date2"
                                                 data-toggle="datetimepicker" />
                                         </div>
@@ -71,6 +78,7 @@
                             </div>
                         </div>
                     </form>
+                    {{-- ---------------booking form end----------------- --}}
                 </div>
             </div>
         </div>
