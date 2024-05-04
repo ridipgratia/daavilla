@@ -1,7 +1,7 @@
 {{-- -------------- old parent div -------------- --}}
 {{-- <div class="container-fluid d-flex flex-wrap col-12  main-footer-div">
 </div> --}}
-<div class="d-flex flex-wrap col-12  main-footer-div">
+<div class="container d-flex flex-wrap col-12  main-footer-div">
     <div class="d-flex flex-wrap col-12  social-footer-div">
         <div class="d-flex flex-wrap col-md-4 col-11 social-footer-div-1">
             <p>US ON SOCIAL MEDIA....</p>
@@ -28,7 +28,8 @@
         <div class="d-flex flex-wrap col-md-2 col-5 content-footer-div-1">
             <p>about us</p>
             <a class="" href=""><span><i class="fa-solid fa-caret-right me-2"></i></span>Contact Us</a>
-            <a class="" href=""><span><i class="fa-solid fa-caret-right me-2"></i></span>Privacy Policy</a>
+            <a class="" href=""><span><i class="fa-solid fa-caret-right me-2"></i></span>Privacy
+                Policy</a>
             <a class="" href=""><span><i class="fa-solid fa-caret-right me-2"></i></span>Terms &
                 Condition</a>
             <a class="" href=""><span><i class="fa-solid fa-caret-right me-2"></i></span>Support</a>

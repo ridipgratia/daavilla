@@ -23,8 +23,11 @@
 
         <!-- Room Start -->
         <x-room-component></x-room-component>
-
         <!-- Room End -->
+
+        {{-- ---------room book with details for testing------------- --}}
+        <x-room-book-with-details-component></x-room-book-with-details-component>
+        {{-- ---------room book with details for testing------------- --}}
         <x-newsletter-component></x-newsletter-component>
 
     @endsection
