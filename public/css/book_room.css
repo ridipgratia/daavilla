@@ -1,0 +1,53 @@
+#select-room-form {
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.basic-details-div {
+    gap: 10px;
+    justify-content: center;
+}
+
+.basic-details-div-1 {
+    flex-wrap: nowrap;
+    border: 1px solid #326869;
+    border-radius: 7px;
+
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic-details-div-1 button,
+div p,
+h3 {
+    margin: 0px;
+    text-align: center;
+}
+
+.basic-details-div-1 div p,
+h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.basic-details-div-1 div p {
+    font-size: 15px;
+}
+
+.basic-details-div-1 div h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.basic-details-div-1 button {
+    font-size: 18px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #326869;
+}
