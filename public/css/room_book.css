@@ -5,7 +5,7 @@
 }
 
 .main-div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* background: rgb(171, 208, 220); */
     border-radius: 10px;
     width: 90%;
@@ -26,7 +26,6 @@
     height: 30dvh;
     margin: 5px 0px;
     /* border: 1px solid red; */
-    /* background: gold; */
 }
 
 .room-img img {
@@ -34,20 +33,21 @@
     width: 100%;
     border-radius: 10px;
 }
-
 .room-details {
+    /* background: gold; */
+    /* border: 1px solid red; */
 }
-
 .details {
-    font-size: 10px;
+    font-size: 15px;
     /* border: 1px solid red; */
 }
 
-.facility {
+.feature {
     border-radius: 5px;
     background: #e0dede;
     padding: 1px;
-    margin: 12px 12px;
+    margin: 5px;
+    width: 150px;
 }
 
 .extend {
@@ -59,7 +59,19 @@
     display: flex;
     justify-content: center;
 }
-
-.other-plan {
-    background-color: #ffff;
+.meals {
+    /* border: 1px solid red; */
+}
+.meal-plan {
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    /* background-color: #f2ecec; */
+}
+.meal-plan input {
+    margin: 0px 10px;
+    height: 1.5rem;
+    width: 1.5rem;
 }
