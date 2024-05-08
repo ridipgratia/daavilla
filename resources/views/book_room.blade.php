@@ -29,9 +29,9 @@
                 </div>
             </div>
             <input type="text" name="datefilter" value="" id="date_input" style="display: none;" />
-            {{-- <div class="d-flex flex-wrap col-12 justify-content-center basic-details-div-over">
+            <div class="d-flex flex-wrap col-12 justify-content-center basic-details-div-over" id="datePickerContainer">
 
-            </div> --}}
+            </div>
         </div>
         <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate tenetur quibusdam exercitationem
@@ -86,7 +86,7 @@
     <script type="text/javascript">
         $(document).on('click', '#open-check-btn', function() {
             $('#date_input').trigger('click');
-            // $('.daterangepicker').addClass('active-datePicker');
+            $('.daterangepicker').addClass('active-datePicker');
         });
         $(function() {
 
@@ -95,7 +95,7 @@
                 locale: {
                     cancelLabel: 'Clear'
                 },
-                // parentEl: '#datePickerContainer',
+                parentEl: '#datePickerContainer',
                 opens: 'center'
             });
 
