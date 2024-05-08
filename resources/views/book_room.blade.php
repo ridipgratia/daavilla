@@ -100,14 +100,14 @@
                 drops: 'down'
             });
 
-            $('#date_input').on('apply.daterangepicker', function(ev, picker) {
+            $('#open-check-btn').on('apply.daterangepicker', function(ev, picker) {
                 console.log(picker.startDate.format('MM/DD/YYYY'));
                 console.log(picker.endDate.format('YYYY-MM-DD'))
                 $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format(
                     'MM/DD/YYYY'));
             });
 
-            $('#date_input').on('cancel.daterangepicker', function(ev, picker) {
+            $('#open-check-btn').on('cancel.daterangepicker', function(ev, picker) {
                 $(this).val('');
             });
 
