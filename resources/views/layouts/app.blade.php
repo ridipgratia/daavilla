@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/room_book.css') }}">
     @yield('css_links')
 </head>
 
