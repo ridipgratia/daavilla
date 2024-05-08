@@ -86,7 +86,7 @@
     <script type="text/javascript">
         $(document).on('click', '#open-check-btn', function() {
             $('#date_input').trigger('click');
-            $('.daterangepicker').addClass('active-datePicker');
+            // $('.daterangepicker').addClass('active-datePicker');
         });
         $(function() {
 
