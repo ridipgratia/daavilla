@@ -3,7 +3,7 @@
 @section('title', 'Book Room')
 @section('css_links')
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="{{ asset('css/book_room.css') }}">
 @endsection
 @section('content')
@@ -14,13 +14,13 @@
                     <button type="button" class="col-1"><i class="fa-solid fa-calendar-days"></i></button>
                     <div class="col-10">
                         <p>Check-in Check-out</p>
-                        <h3>Sat 04 May - Sun 05 May</h3>
+                        <h3 id="check-in-out-date">Sat 04 May - Sun 05 May</h3>
                     </div>
                     <button type="button" class="col-1" id="open-check-btn"><i
                             class="fa-solid fa-caret-down"></i></button>
                 </div>
                 <div class="d-flex flex-wrap col-md-5 col-9 basic-details-div-1">
-                    <button type="button" class="col-1"><i class="fa-solid fa-calendar-days"></i></button>
+                    <button type="button" class="col-1"><i class="fa-solid fa-person"></i></button>
                     <div class="col-10">
                         <p>Rooms & Person</p>
                         <h3>1 Room & 2Person</h3>
@@ -31,6 +31,35 @@
             <input type="text" name="datefilter" value="" id="date_input" style="display: none;" />
             <div class="d-flex flex-wrap col-12 justify-content-center" id="datePickerContainer">
 
+            </div>
+            <div class="d-flex flex-wrap col-12 room-person-count-div">
+                <div class="d-flex flex-wrap col-md-7 col-11 room-person-count-div-1">
+                    <div class="d-flex flex-wrap col-12 room-person-count-head">
+                        <div class="d-flex flex-wrap room-person-count-head-1">
+                            <span>Room</span>
+                            <span>1</span>
+                        </div>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="d-flex flex-wrap col-12 room-person-count-content">
+                        <div class="d-flex flex-wrap col-12 room-person-count-content-1">
+                            <p class="col-md-5 col-12">Number Of Adults</p>
+                            <div class="d-flex flex-wrap col-md-5 col-12">
+                                <button><i class="fa-solid fa-minus"></i></button>
+                                <p id="number-of-adult"></p>
+                                <button><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap col-12 room-person-count-content-1">
+                            <p class="col-md-5 col-12">Number Of Child</p>
+                            <div class="d-flex flex-wrap col-md-5 col-12">
+                                <button><i class="fa-solid fa-minus"></i></button>
+                                <p id="number-of-child"></p>
+                                <button><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div>
@@ -79,38 +108,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-
-
-    <script type="text/javascript">
-        $(document).on('click', '#open-check-btn', function() {
-            $('#date_input').trigger('click');
-            // $('.daterangepicker').addClass('active-datePicker');
-        });
-        $(function() {
-
-            $('#open-check-btn').daterangepicker({
-                autoUpdateInput: false,
-                locale: {
-                    cancelLabel: 'Clear'
-                },
-                parentEl: '#datePickerContainer',
-                // opens: 'center',
-                drops: 'down'
-            });
-
-            $('#open-check-btn').on('apply.daterangepicker', function(ev, picker) {
-                console.log(picker.startDate.format('MM/DD/YYYY'));
-                console.log(picker.endDate.format('YYYY-MM-DD'))
-                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format(
-                    'MM/DD/YYYY'));
-            });
-
-            $('#open-check-btn').on('cancel.daterangepicker', function(ev, picker) {
-                $(this).val('');
-            });
-
-        });
-    </script>
+    <script type="module" src="{{ asset('js/book_room.js') }}"></script>
 @endsection
