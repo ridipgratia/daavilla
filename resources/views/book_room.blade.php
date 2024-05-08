@@ -29,7 +29,7 @@
                 </div>
             </div>
             <input type="text" name="datefilter" value="" id="date_input" style="display: none;" />
-            <div class="d-flex flex-wrap col-12 justify-content-center basic-details-div-over" id="datePickerContainer">
+            <div class="d-flex flex-wrap col-12 justify-content-center" id="datePickerContainer">
 
             </div>
         </div>
@@ -96,7 +96,8 @@
                     cancelLabel: 'Clear'
                 },
                 parentEl: '#datePickerContainer',
-                opens: 'center'
+                // opens: 'center',
+                drops: 'down'
             });
 
             $('#date_input').on('apply.daterangepicker', function(ev, picker) {
