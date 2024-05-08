@@ -8,52 +8,108 @@
 @endsection
 @section('content')
     <form action="" id="select-room-form" class="d-flex flex-wrap col-12">
-        <div class="d-flex flex-wrap col-md-8 col-12  basic-details-div">
-            <div class="d-flex col-5 basic-details-div-1">
-                <button type="button" class="col-1"><i class="fa-solid fa-calendar-days"></i></button>
-                <div class="col-10">
-                    <p>Check-in Check-out</p>
-                    <h3>Sat 04 May - Sun 05 May</h3>
+        <div class="d-flex flex-wrap col-12 justify-content-center main-basic-details-div">
+            <div class="d-flex flex-wrap col-md-8 col-12  basic-details-div">
+                <div class="d-flex col-md-5 col-9 basic-details-div-1">
+                    <button type="button" class="col-1"><i class="fa-solid fa-calendar-days"></i></button>
+                    <div class="col-10">
+                        <p>Check-in Check-out</p>
+                        <h3>Sat 04 May - Sun 05 May</h3>
+                    </div>
+                    <button type="button" class="col-1" id="open-check-btn"><i
+                            class="fa-solid fa-caret-down"></i></button>
                 </div>
-                <button type="button" class="col-1"><i class="fa-solid fa-caret-down"></i></button>
-            </div>
-            <div class="d-flex flex-wrap col-5 basic-details-div-1">
-                <button type="button" class="col-1"><i class="fa-solid fa-calendar-days"></i></button>
-                <div class="col-10">
-                    <p>Rooms & Person</p>
-                    <h3>1 Room & 2Person</h3>
+                <div class="d-flex flex-wrap col-md-5 col-9 basic-details-div-1">
+                    <button type="button" class="col-1"><i class="fa-solid fa-calendar-days"></i></button>
+                    <div class="col-10">
+                        <p>Rooms & Person</p>
+                        <h3>1 Room & 2Person</h3>
+                    </div>
+                    <button type="button" class="col-1"><i class="fa-solid fa-caret-down"></i></button>
                 </div>
-                <button type="button" class="col-1"><i class="fa-solid fa-person"></i></button>
             </div>
+            <input type="text" name="datefilter" value="" id="date_input" style="display: none;" />
+            {{-- <div class="d-flex flex-wrap col-12 justify-content-center basic-details-div-over">
+
+            </div> --}}
         </div>
         <div>
-            <input type="text" value="" id="pickadate" class="pickadate" />
-            <br />
-            <input type="text" value="" id="pickadateandtime" class="pickatime" />
-            <button type="button" id="btn">Gte Date</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate tenetur quibusdam exercitationem
+                provident illum nulla quod aliquid iste nihil! Nisi itaque in distinctio possimus tempora cum? Dicta
+                possimus ipsam unde repudiandae doloribus similique amet repellat iste rerum dolorum. Eveniet magnam
+                molestias architecto natus nobis amet. Veritatis, quis quia. Natus ducimus, asperiores sapiente voluptas
+                voluptates ex quo veniam repellendus. Porro officia iste, nisi vel nihil numquam similique consequuntur sed
+                libero tempora, tenetur quo neque nemo rerum explicabo delectus perspiciatis praesentium illo asperiores
+                quod laborum deserunt quae qui? Voluptatibus nostrum nemo nulla beatae, in aliquid dolorum fugiat
+                praesentium ut a voluptatum recusandae dicta ipsum fugit facere quidem quis iure? Architecto dicta magni
+                labore perspiciatis, dolorem fugiat recusandae natus itaque nisi vel dolor deleniti tenetur. Nam quae alias
+                amet numquam incidunt, similique sint fuga omnis enim dolore, nulla quis ullam repudiandae. Facere rem
+                laboriosam sint blanditiis? Sequi consequatur, nostrum debitis totam cupiditate velit? Dolorem perferendis
+                assumenda quia animi fugit repellat, adipisci ab hic qui, culpa itaque reprehenderit porro ullam rem. Sed
+                impedit modi nam tenetur necessitatibus nostrum tempore praesentium eius. Rem, sed veritatis? Distinctio
+                obcaecati rerum quos consequatur officiis tempore nulla! Fugit adipisci, odio tempore voluptates et est
+                amet, mollitia eaque nostrum consectetur atque explicabo vitae perferendis ad suscipit labore quidem dolorem
+                tenetur harum possimus perspiciatis beatae? Vel commodi delectus necessitatibus quod praesentium culpa
+                ducimus autem, officiis perspiciatis ea consequatur, nam expedita inventore temporibus veritatis ut rem
+                natus soluta hic obcaecati dolores? Corrupti ea perspiciatis ducimus qui nesciunt deleniti possimus error
+                voluptates a magni. Excepturi numquam doloremque, earum quisquam atque quia cupiditate dolores illum dolorem
+                mollitia non blanditiis possimus repellendus molestiae, quaerat tempora eum quis suscipit! Veniam optio
+                laboriosam voluptatum fugit ipsa ipsum dolor enim, nobis nesciunt quaerat? Adipisci, autem dolore.
+                Accusantium ab eum illo repellat ipsa nemo atque, natus eveniet rerum voluptate dolore pariatur explicabo
+                optio corrupti asperiores quaerat itaque delectus neque quibusdam amet nihil, nulla deserunt voluptatem!
+                Ullam dolor officiis quae nulla ab id, nisi fuga doloremque doloribus, nesciunt eos, quis suscipit omnis
+                vero iure temporibus porro dignissimos sit consequuntur placeat assumenda! Ullam similique adipisci, iste
+                iure inventore, quod voluptas modi dolorem doloribus neque mollitia sit delectus illo aperiam provident
+                tenetur est nulla facilis dolore! Nemo praesentium alias, porro at iusto minima ducimus magni molestiae
+                nulla incidunt unde modi sequi amet voluptatem! Autem consequatur optio nesciunt mollitia. Voluptas facilis
+                cum laboriosam vitae ipsum molestiae, veniam laborum fuga voluptates quam nostrum maxime delectus magnam
+                temporibus assumenda sapiente ullam totam adipisci fugit repellat dignissimos doloremque nobis vel soluta.
+                Quidem, incidunt eum. Ex iste unde suscipit iusto. Voluptatum possimus repudiandae, quod harum provident
+                fugiat temporibus debitis dicta. Cupiditate nesciunt dolore iusto, sint quae error? Beatae quod natus
+                voluptatem adipisci consectetur mollitia nobis necessitatibus sunt quisquam optio veniam amet minus suscipit
+                tenetur, facere reiciendis! Consequatur, consectetur? Id doloribus temporibus dolorem totam corrupti
+                deleniti. Porro atque deleniti ipsam nam laboriosam quo! Rem tempore quisquam perspiciatis suscipit
+                similique fugit sequi autem impedit alias quasi deleniti cupiditate molestiae, fugiat ullam maiores mollitia
+                voluptatibus officiis nisi ipsum eaque.</p>
         </div>
     </form>
 @endsection
 
 @section('js_links')
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script>
-        // $("#pickadate").flatpickr();
-        $("#pickadateandtime").flatpickr({
-            enableTime: false,
-            dateFormat: "Y-m-d"
-        });
-        $(document).on('click', '#btn', function() {
-            var date = $('#pickadateandtime').val();
-            var options = {
-                weekday: 'short',
-                day: 'numeric',
-                month: 'short'
-            };
-            var start = new Date(date);
-            console.log(start.toLocaleDateString('en-US', options))
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-        })
+
+
+    <script type="text/javascript">
+        $(document).on('click', '#open-check-btn', function() {
+            $('#date_input').trigger('click');
+            // $('.daterangepicker').addClass('active-datePicker');
+        });
+        $(function() {
+
+            $('#open-check-btn').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                },
+                // parentEl: '#datePickerContainer',
+                opens: 'center'
+            });
+
+            $('#date_input').on('apply.daterangepicker', function(ev, picker) {
+                console.log(picker.startDate.format('MM/DD/YYYY'));
+                console.log(picker.endDate.format('YYYY-MM-DD'))
+                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format(
+                    'MM/DD/YYYY'));
+            });
+
+            $('#date_input').on('cancel.daterangepicker', function(ev, picker) {
+                $(this).val('');
+            });
+
+        });
     </script>
 @endsection

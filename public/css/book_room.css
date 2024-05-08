@@ -11,6 +11,7 @@
 .basic-details-div-1 {
     flex-wrap: nowrap;
     border: 1px solid #326869;
+    background-color: #ffffff;
     border-radius: 7px;
 
     padding: 5px;
@@ -50,4 +51,27 @@ h3 {
     outline: none;
     cursor: pointer;
     color: #326869;
+}
+
+.main-basic-details-div {
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    z-index: 10;
+    /* background-color: #FFFFFF; */
+    /* border: 1px solid grey; */
+    border-radius: 7px;
+}
+
+.basic-details-div-over {
+    margin: 5px 0px;
+    border: 1px solid red;
+}
+
+.active-datePicker {
+    /* display: block !important; */
+    position: sticky !important;
+    justify-content: center !important;
 }
