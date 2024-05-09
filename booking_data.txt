@@ -1,1 +1,16 @@
 1. BOOKING ID WITH INCREMENT ID 
+
+
+2. BBOKING DATABASE ->
+    1. BASIC BOOKING DETAILS->
+        1. BASIC BOOKING TABLE ->
+            1. PRE BOOKING ID 
+            2. PRE BOOKING DATE & TIME 
+            3. EXPIRE 
+        2. ROOM & PERSON DETAILS ->
+            COLUMNS ->
+                1. NO ADULT
+                2. NO CHILD 
+                3. NO ROOM
+                4. ROOM TYPE
+                5. TEMP_USER_ID

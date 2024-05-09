@@ -35,7 +35,7 @@
             </div>
             <div class="d-flex flex-wrap col-12 room-person-count-div">
                 <div class="d-flex flex-wrap col-md-7 col-11 room-person-count-scroll-div">
-                    <div class="d-flex flex-wrap col-12 room-person-count-div-1 room-person-radius" id="">
+                    <div class="d-flex flex-wrap col-12 room-person-count-div-1 room-person-radius" id="room-div-1">
                         <div class="d-flex flex-wrap col-12 room-person-count-head">
                             <div class="d-flex flex-wrap room-person-count-head-1">
                                 <span>Room</span>
@@ -66,7 +66,8 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap col-md-7 col-11 room-person-add-div">
-                    <button><span><i class="fa-solid fa-plus"></i></span> <span>New Room</span></button>
+                    <button id="add-new-room" type="button"><span><i class="fa-solid fa-plus"></i></span> <span>New
+                            Room</span></button>
                     <button><span><i class="fa-solid fa-check"></i></span> <span>Done</span></button>
                 </div>
             </div>
