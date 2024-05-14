@@ -21,7 +21,7 @@
             </div>
             <a href="" class="text-danger fw-bold fst-itallic">view more details</a>
             <div class="d-flex flex-column justify-content-end align-items-end h-75 p-3">
-                <div class="price">4500/night</div>
+                <div class="price text-danger fw-bold m-2">Price : <span id="price">4500</span>/Night</div>
                 <div class="">
                     <button class="btn btn-danger">BOOK NOW</button>
                 </div>
@@ -38,29 +38,30 @@
         <h4 class="mx-5">Select meal plan</h4>
         <div class="meals d-flex row  mx-5">
             <div class="meal-plan justify-content-around d-flex col">
-                <input type="checkbox" name="room-only" id="roomOnly">
+                <input type="radio" name="option" id="onlyRoom">
                 <label for="room-only">Room only</label>
             </div col-12>
             <div class="meal-plan justify-content-around d-flex col">
-                <input type="checkbox" name="breakfast" id="breakfast">
+                <input type="radio" name="option" id="breakfast">
                 <label for="breakfast">Include Breakfast</label>
             </div col-12>
             <div class="meal-plan justify-content-around d-flex col">
-                <input type="checkbox" name="lunch" id="lunch">
+                <input type="radio" name="option" id="lunch">
                 <label for="lunch">Include Lunch</label>
             </div col-12>
             <div class="meal-plan justify-content-around d-flex col">
-                <input type="checkbox" name="dinner" id="dinner">
+                <input type="radio" name="option" id="dinner">
                 <label for="dinner">Include Dinner</label>
             </div>
             <div class="meal-plan justify-content-around d-flex col">
-                <input type="checkbox" name="fullboard" id="fullBoard">
+                <input type="radio" name="option" id="fullboard">
                 <label for="dinner">Full Board</label>
             </div>
         </div>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="{{ asset('js/roomdetails.js') }}"></script>
 <script>
     var extend = document.getElementById('extend');
     var extendedDetail = document.getElementById('extended-details');
