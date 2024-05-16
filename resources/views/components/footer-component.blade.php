@@ -8,7 +8,9 @@
         </div>
         <div class="d-flex flex-wrap col-md-7 col-11 social-footer-div-1">
             <a class="d-flex " href=""><i class="fab fa-twitter"></i></a>
-            <a class="d-flex" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="d-flex" target="__blank"
+                href="https://www.facebook.com/profile.php?id=61558991040133&mibextid=ZbWKwL"><i
+                    class="fab fa-facebook-f"></i></a>
             <a class="d-flex" href=""><i class="fab fa-youtube"></i></a>
             <a class="d-flex" href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
@@ -21,7 +23,8 @@
         </div>
         <div class="d-flex flex-wrap col-md-3 col-5 content-footer-div-1">
             <p>contact</p>
-            <p class=""><i class="fa fa-map-marker-alt me-2"></i>Adarshapur By Ln 1B Kahilipara, Kahilipara, Guwahati, Assam 781019</p>
+            <p class=""><i class="fa fa-map-marker-alt me-2"></i>Adarshapur By Ln 1B Kahilipara, Kahilipara,
+                Guwahati, Assam 781019</p>
             <p class=""><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
             <p class=""><i class="fa fa-envelope me-2"></i>info@example.com</p>
         </div>
