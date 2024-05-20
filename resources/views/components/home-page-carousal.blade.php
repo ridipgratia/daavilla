@@ -3,7 +3,7 @@
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="img/living-room.jpg" alt="Image">
+                <img class="w-100" src="img/entrence.jpeg" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 700px;">
                         <h1 class="text-white mb-4 animated slideInDown">Hotel <span
