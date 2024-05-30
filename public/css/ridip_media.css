@@ -59,9 +59,19 @@
     }
 }
 
+@media (max-width:800px) {
+    .check-in-out-div-1 p {
+        font-size: 15px;
+    }
+}
+
 @media(max-width:700px) {
     .main-service-card {
         width: 90%;
+    }
+
+    .check-in-out-div-1 {
+        width: 45%;
     }
 }
 
