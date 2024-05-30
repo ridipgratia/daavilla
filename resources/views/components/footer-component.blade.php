@@ -23,10 +23,11 @@
         </div>
         <div class="d-flex flex-wrap col-md-3 col-5 content-footer-div-1">
             <p>contact</p>
-            <p class=""><i class="fa fa-map-marker-alt me-2"></i>Adarshapur By Ln 1B Kahilipara, Kahilipara,
-                Guwahati, Assam 781019</p>
-            <p class=""><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
-            <p class=""><i class="fa fa-envelope me-2"></i>info@example.com</p>
+            <p class=""><i class="fa fa-map-marker-alt me-2"></i>Daavilla Adarshapur ByLane No.1 Near Sarva
+                Shiksha Abhiyan, Kahilipara,
+                Guwahati</p>
+            <p class=""><i class="fa fa-phone-alt me-2"></i>9395103836</p>
+            <p class=""><i class="fa fa-envelope me-2"></i>reservations.guwahati@daavilla.com</p>
         </div>
         <div class="d-flex flex-wrap col-md-2 col-5 content-footer-div-1">
             <p>about us</p>
