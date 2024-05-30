@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    {{-- <x-loader-component></x-loader-component> --}}
+    <x-loader-component></x-loader-component>
     <div class="container-xxl bg-white p-0" id="content">
 
         <!-- Header Start -->
