@@ -30,18 +30,20 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
     <link rel="stylesheet" href="{{ asset('css/myclass.css') }}">
     <link rel="stylesheet" href="{{ asset('css/loader.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/ridip_media.css') }}">
     <link rel="stylesheet" href="{{ asset('css/room_book.css') }}">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
     @yield('css_links')
 </head>
 
 <body>
-    <x-loader-component></x-loader-component>
+    {{-- <x-loader-component></x-loader-component> --}}
     <div class="container-xxl bg-white p-0" id="content">
 
         <!-- Header Start -->

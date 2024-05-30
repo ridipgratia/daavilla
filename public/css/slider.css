@@ -1,0 +1,51 @@
+.main-slider {
+    position: relative;
+}
+
+.check-in-out-container {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.check-in-out-div {
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding: 5px 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.check-in-out-bar {
+    width: 1px;
+    height: 30px;
+    background: black;
+}
+
+.check-in-out-div-1 {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.check-in-out-div-1 p {
+    margin: 0px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.check-in-out-div-1 span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,6 +1,6 @@
 <div class="container-fluid p-0 mb-5">
 
-    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="header-carousel" class="carousel slide main-slider" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="w-100" src="img/entrence.jpeg" alt="Image">
@@ -32,6 +32,20 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+        <div class="d-flex flex-wrap col-12 justify-content-center  check-in-out-container">
+            <div class="d-flex flex-wrap col-11 check-in-out-div">
+                <div class="d-flex flex-wrap col-4 check-in-out-div-1">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <p>Check-in : 2:00 PM</p>
+                </div>
+                <div class="check-in-out-bar">
+                </div>
+                <div class="d-flex flex-wrap col-4 check-in-out-div-1">
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <p>Check-out: 12:00 PM</p>
+                </div>
+            </div>
+        </div>
     </div>
     {{-- ------------------booking component start------------------ --}}
     <x-room-booking-form-component></x-room-booking-form-component>
