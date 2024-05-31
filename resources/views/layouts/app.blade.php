@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
-    <link href="img/favicon.jpg" rel="icon" type="image/x-icon">
+    <link href="{{ asset('img/DAAVILLA_PNG.png') }}" rel="icon" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
