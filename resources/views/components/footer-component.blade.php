@@ -27,7 +27,7 @@
                 Shiksha Abhiyan, Kahilipara,
                 Guwahati, 781019</p>
             <p class=""><i class="fa fa-phone-alt me-2"></i>9395103836</p>
-            <p class=""><i class="fa fa-envelope me-2"></i>reservations.guwahati@daavilla.com</p>
+            <p class=""><i class="fa fa-envelope me-2"></i>reservation@daavilla.com</p>
         </div>
         <div class="d-flex flex-wrap col-md-2 col-5 content-footer-div-1">
             <p>about us</p>
