@@ -25,7 +25,7 @@
             <p>contact</p>
             <p class=""><i class="fa fa-map-marker-alt me-2"></i>Daavilla Adarshapur ByLane No.1 Near Sarva
                 Shiksha Abhiyan, Kahilipara,
-                Guwahati</p>
+                Guwahati,781019</p>
             <p class=""><i class="fa fa-phone-alt me-2"></i>9395103836</p>
             <p class=""><i class="fa fa-envelope me-2"></i>reservations.guwahati@daavilla.com</p>
         </div>
