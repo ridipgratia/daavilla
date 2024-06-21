@@ -25,7 +25,7 @@
                         </p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
-                        <a href="" class="btn btn-danger">BOOK NOW</a>
+                        <a href="{{route('booking.index')}}" class="btn btn-danger">BOOK NOW</a>
                     </div>
                 </div>
             </div>
