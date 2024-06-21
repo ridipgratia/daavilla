@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoomController;
@@ -11,3 +12,9 @@ Route::get('/',[HomeController::class,'getHomePage'])->name('home');
 Route::get('/rooms',[RoomController::class,'getRoomPage'])->name('rooms');
 //'''''''''''''''''''''''route for contact page DAAVILLA''''''''''''''''''''
 Route::get('/contact',[ContactController::class,'getContactPage'])->name('contact');
+//''''''''''''''''''''route for book now ''''''''''''//
+Route::get('/booknow',[BookingController::class,'index'])->name('booking.index');
+//''''''''''''''''''''route for checking availability'''''''''''//
+Route::post('/booknow/checkavailability',[BookingController::class,'checkAvailability'])->name('rooms.checkAvailability');
+//'''''''''''''''''''''route for selected room details''''''''''''''//
+// Route::post('/room/confirmation',[BookingController::class,'confirmation'])->name('rooms.confirmation');
