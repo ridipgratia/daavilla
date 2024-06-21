@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\RoomDetailsController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -23,3 +23,5 @@ Route::get('/first-form-booking', [BookingController::class, 'firstFormBooking']
 Route::get('/first-booking-page-get', [BookingController::class, 'firstFormBookingGet']);
 // ------------------ book room -----------------
 Route::get('/book-room', [BookRoomController::class, 'index']);
+Route::get('/contact',[ContactController::class,'getContactPage'])->name('contact');
+Route::get('/roomdetails', [RoomDetailsController::class,'getRoomdetailsForm'])->name('roomDetailsForm');
