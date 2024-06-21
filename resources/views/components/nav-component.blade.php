@@ -39,8 +39,17 @@
 <!-- Header End --> --}}
 
 <div class="container-fluid bg-primary px-0 d-flex flex-wrap main-navbar-div">
-    <div class="d-flex flex-wrap navbar-head-div">
+    {{-- <div class="d-flex flex-wrap navbar-head-div">
         <a href="/">DAAVILLA</a>
+        
+        
+        <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+    </div> --}}
+    <div class="d-flex flex-wrap navbar-head-div" style="padding:0px">
+        <a href="/" style="padding: 0px">
+        <img src="{{asset('img/DAAVILLA_PNG.png')}}" style="width:130px ;padding :0px;" alt="">
+        </a>
+        
         <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
     <div class="d-flex flex-wrap navbar-link-div">
