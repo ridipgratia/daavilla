@@ -12,21 +12,21 @@
             <div class="input-container">
                 <div>
                     <label class="checkin" for="checkin">CHECK IN</label>
-                    <input type="date" id="checkin" name="checkin" value="2024-06-11">
+                    <input type="date" id="checkin" name="checkin" value="{{request('checkin')}}">
                 </div>
                 <div>
                     <label for="checkout">CHECK OUT</label>
-                    <input type="date" id="checkout" name="checkout" value="2024-06-12">
+                    <input type="date" id="checkout" name="checkout" value="{{request('checkout')}}">
                 </div>
             </div>
             <div class="input-container">
                 <div>
                     <label for="adults">ADULTS</label>
-                    <input type="number" id="adults" name="adults" value="1" min="1">
+                    <input type="number" id="adults" name="adults" value="{{request('adults')}}" min="1">
                 </div>
                 <div>
                     <label for="children">CHILDREN</label>
-                    <input type="number" id="children" name="children" value="0" min="0">
+                    <input type="number" id="children" name="children" value="{{request('children')}}" min="0">
                 </div>
             </div>
             <div class="check-input">
@@ -53,7 +53,7 @@
                 <h5 class="card-title">{{ $room['roomtype'] }}</h5>
                 <p class="card-text">{{ $room['roomdescription'] }}</p>
                 <p class="card-text">₹{{ number_format($room['rate'], 2) }}/night</p>
-                <form action="" method="">
+                <form action="{{route('roomDetailsForm')}}" method="GET">
                     @csrf
                     <input type="hidden" name="checkin" value="{{ request('checkin') }}">
                     <input type="hidden" name="checkout" value="{{ request('checkout') }}">
