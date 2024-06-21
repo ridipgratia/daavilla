@@ -16,5 +16,6 @@ Route::get('/contact',[ContactController::class,'getContactPage'])->name('contac
 Route::get('/booknow',[BookingController::class,'index'])->name('booking.index');
 //''''''''''''''''''''route for checking availability'''''''''''//
 Route::post('/booknow/checkavailability',[BookingController::class,'checkAvailability'])->name('rooms.checkAvailability');
+Route::get('/booknow/checkavailability',[BookingController::class,'redirect'])->name('redirect');
 //'''''''''''''''''''''route for selected room details''''''''''''''//
 // Route::post('/room/confirmation',[BookingController::class,'confirmation'])->name('rooms.confirmation');

@@ -82,6 +82,9 @@ public function checkAvailability(Request $request)
     // Return view with rooms data
     return view('booking', compact('rooms'));
 }
+public function redirect(){
+    return view('booking');
+}
 
 //----------------Functions to redirect to selected room's detail page -------------------//
 // public function confirmation(Request $request){

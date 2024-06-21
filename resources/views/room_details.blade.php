@@ -34,8 +34,7 @@
                     <p class="time">Until 12:00:00</p>
                 </div>
                 <div class="room-info">
-
-
+                    @if(isset($roomDetails['roominfo']))
                     <div class="block">
                         <h6>Room Type</h6>
                         <h10>{{ $roomDetails['roominfo']['roomtype'] }}</h10>
@@ -48,34 +47,18 @@
                     <hr>
                     <div class="block">
                         <h6>Children</h6>
-
-                        <h10>
-                            {{ $children }}
-                        </h10>
+                        <h10>{{ $children }}</h10>
                     </div>
                     <hr>
                     <div class="block">
                         <h6>Price</h6>
-
                         <h10>{{ $roomDetails['roominfo']['rate'] }}</h10>
                     </div>
                     <hr>
                     @endif
-
-
-
-                    <div class="form-group">
-                        <input class="form-field" type="text" placeholder="Promo Code">
-                        <button class="submit">Submit</button>
-                    </div>
-                    <hr>
-                    <div class="block">
-                        <h8>Total Price</h8>
-                        <h3>{{ $roomDetails['roominfo']['rate'] }}</h3>
-                    </div>
-                    <hr>
                 </div>
             </div>
+            @endif
             <div class="checkin-checkout card">
                 <div class="img">
                     <img src="{{ asset('img/firework.png') }}" alt="">
@@ -112,7 +95,10 @@
                 <h1><b>Enter Your Details</b></h1>
 
                 <form id="bookingForm" method="POST" action="#">
+                    @csrf
                     <div class="form-container">
+                        <input type="hidden" id="route-url" value="{{ route('home') }}">
+
                         <div class="input-container">
                             <input class="form-field" id="f-name" type="text" placeholder="First Name">
                             <input class="form-field" id="l-name" type="text" placeholder="Last Name">
@@ -123,14 +109,13 @@
                         </div>
                         <textarea class="form-field longinput" id="address" placeholder="Address"></textarea>
 
+                        @if(isset($roomDetails['roominfo']))
                         <div class="card room-desk">
                             @php
                             if (is_null($roomDetails['roominfo']['room_imagename'])) {
-                            echo '<div class="img"><img src="' . asset('img/firework.png') . '" alt=""></div>';
-                            }
-                            else{
-                            echo '<div class="img"><img src="' . $roomDetails['roominfo']['room_imagename'] . '" alt="">
-                            </div>';
+                                echo '<div class="img"><img src="' . asset('img/firework.png') . '" alt=""></div>';
+                            } else {
+                                echo '<div class="img"><img src="' . $roomDetails['roominfo']['room_imagename'] . '" alt=""></div>';
                             }
                             @endphp
 
@@ -141,6 +126,7 @@
                                 <a href="#" class="booking-conditions">Booking Conditions</a>
                             </div>
                         </div>
+                        @endif
                         <textarea class="form-field longinput" id="special-request"
                             placeholder="Special Request"></textarea>
                         <button type="submit" class="submit-form">Submit</button>

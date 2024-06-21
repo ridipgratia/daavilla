@@ -10,8 +10,8 @@ $(document).ready(function() {
         const lastName = $('#l-name').val().trim();
         const email = $('#email').val().trim();
         const phone = $('#phone').val().trim();
-        const address = $('#address').val().trim();
-        const specialRequest = $('#special-request').val().trim();
+        const specialInstruction = $('#special-request').val().trim();
+        const routeUrl = document.getElementById('route-url').value;
 
         // Validate each field
         if (firstName === "") {
@@ -36,11 +36,6 @@ $(document).ready(function() {
             errorMessage += "A valid 10-digit Phone Number is required.<br>";
         }
 
-        if (address === "") {
-            isValid = false;
-            errorMessage += "Address is required.<br>";
-        }
-
         // Display error messages using SweetAlert if the form is not valid
         if (!isValid) {
             Swal.fire({
@@ -53,27 +48,44 @@ $(document).ready(function() {
 
         // Gather form data
         const formData = {
-            first_name: firstName,
-            last_name: lastName,
+            f_name: firstName,
+            l_name: lastName,
             email: email,
             phone: phone,
-            address: address,
-            special_request: specialRequest
+            specialinstruction: specialInstruction,
+            checkin: "2024-07-19",
+            checkout: "2024-07-20",
+            adult: 2,
+            children: 0,
+            roomid: 1,
+            discount: 0,
+            amount: 3000
         };
 
         // Make the AJAX request
         $.ajax({
             type: 'POST',
-            url: 'https://api.example.com/submit', // Replace with your API URL
+            url: 'https://daavilla.in/apis/api/update-cart',
             data: JSON.stringify(formData),
             contentType: 'application/json',
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcl9pZCI6MTIsImVtYWlsIjoiam9obmRvZUBleGFtcGxlLmNvbSJ9.p2b9N9kiVOM5R7KiF7UvSwH2pBkp3prX60a06tVP4WE');
+            },
             success: function(response) {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
                     text: 'Form submitted successfully!'
+                }).then((result) => {
+                    // Redirect to another view if the user clicks "OK"
+                    if (result.isConfirmed) {
+                        window.location.href = routeUrl;
+                    }
                 });
                 console.log('Success:', response);
+                
+                // Redirect to another view
+                
             },
             error: function(xhr, status, error) {
                 Swal.fire({
