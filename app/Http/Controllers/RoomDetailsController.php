@@ -17,7 +17,7 @@ class RoomDetailsController extends Controller
         $children = $request->input('children');
 
         // Make the POST request to the Room Detail API
-        $response = Http::post('https://daavilla.in/apis/api/roomDetail', [
+        $response =  Http::post('https://daavilla.in/apis/api/roomDetail', [
             'roomid' => $roomId,
             'checkin' => $checkin,
             'checkout' => $checkout,

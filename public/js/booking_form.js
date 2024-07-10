@@ -75,7 +75,7 @@ $(document).ready(function() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
-                    text: 'Form submitted successfully!'
+                    text: 'Booking Successful!'
                 }).then((result) => {
                     // Redirect to another view if the user clicks "OK"
                     if (result.isConfirmed) {
