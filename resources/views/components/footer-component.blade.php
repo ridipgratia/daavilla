@@ -12,7 +12,7 @@
                 href="https://www.facebook.com/profile.php?id=61558991040133&mibextid=ZbWKwL"><i
                     class="fab fa-facebook-f"></i></a>
             <a class="d-flex" href=""><i class="fab fa-youtube"></i></a>
-            <a class="d-flex" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="d-flex" href="https://www.instagram.com/hotel.daavilla"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
     <div class="d-flex flex-wrap col-12 content-footer-div">
