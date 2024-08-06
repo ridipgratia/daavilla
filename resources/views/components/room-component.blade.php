@@ -9,7 +9,7 @@
       <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
         <div class="room-item shadow rounded overflow-hidden">
           <div class="position-relative">
-            <img class="img-fluid" src="img/room-1.jpg" alt="">
+            <img class="img-fluid" src="img/standard.jpg" alt="">
             <small
               class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs3000/Night</small>
           </div>
@@ -44,7 +44,7 @@
       <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
         <div class="room-item shadow rounded overflow-hidden">
           <div class="position-relative">
-            <img class="img-fluid" src="img/room-2.jpg" alt="">
+            <img class="img-fluid" src="img/delux.jpg" alt="">
             <small
               class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs4000/Night</small>
           </div>
@@ -115,7 +115,7 @@
       <div class="col-lg-4 col-md-6" data-wow-delay="0.3s">
         <div class="room-item shadow rounded overflow-hidden">
           <div class="position-relative">
-            <img class="img-fluid" src="img/room-2.jpg" alt="">
+            <img class="img-fluid" src="img/suit.jpg" alt="">
             <small
               class="position-absolute start-50 top-100 translate-middle-y bg-danger text-white rounded py-1 px-3 ms-4">Rs5000/Night</small>
           </div>

@@ -62,6 +62,9 @@ $(document).ready(function() {
             amount: 3000
         };
 
+        // Show loader
+        $('#loader').show();
+
         // Make the AJAX request
         $.ajax({
             type: 'POST',
@@ -72,6 +75,9 @@ $(document).ready(function() {
                 xhr.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcl9pZCI6MTIsImVtYWlsIjoiam9obmRvZUBleGFtcGxlLmNvbSJ9.p2b9N9kiVOM5R7KiF7UvSwH2pBkp3prX60a06tVP4WE');
             },
             success: function(response) {
+                // Hide loader
+                $('#loader').hide();
+
                 Swal.fire({
                     icon: 'success',
                     title: 'Success',
@@ -83,11 +89,11 @@ $(document).ready(function() {
                     }
                 });
                 console.log('Success:', response);
-                
-                // Redirect to another view
-                
             },
             error: function(xhr, status, error) {
+                // Hide loader
+                $('#loader').hide();
+
                 Swal.fire({
                     icon: 'error',
                     title: 'Error',
